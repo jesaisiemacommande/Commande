@@ -376,26 +376,72 @@ function lsSet(k, v){
 }
 var K_T = "cmd_tarifs", K_O = "cmd_orders", K_C = "cmd_counter", K_S = "cmd_settings";
 
-var settings = lsGet(K_S, { titre: "BAYLE", email: "tytournel@baylesa.com" });
+var settings = lsGet(K_S, { titre: "Domaine de Limagne (Commande avant le 03/12)", email: "tytournel@baylesa.com" });
 if (!settings || typeof settings !== "object") settings = { titre: "BAYLE", email: "tytournel@baylesa.com" };
-if (!settings.titre) settings.titre = "BAYLE";
+if (!settings.titre) settings.titre = "Domaine de Limagne (Commande avant le 03/12)";
 if (!settings.email) settings.email = "tytournel@baylesa.com";
 if (typeof settings.autoEmail !== "boolean") settings.autoEmail = false;
 
 var tarifs = lsGet(K_T, null);
 if (!Array.isArray(tarifs)) {
   tarifs = [
-    { id: 1,  nom: "Foie gras extra > 650 g",              pu: 47.10, unite: "kg", cat: "Foie gras" },
-    { id: 2,  nom: "Foie gras extra dessous < 650 g",      pu: 50.30, unite: "kg", cat: "Foie gras" },
-    { id: 3,  nom: "Magret > 420 g",                        pu: 14.90, unite: "kg", cat: "Magrets" },
-    { id: 4,  nom: "Aiguillettes en poche s/v < 550 g",     pu: 17.90, unite: "kg", cat: "Magrets" },
-    { id: 5,  nom: "Tournedos de magret s/v x2 < 550 g",    pu: 23.70, unite: "kg", cat: "Magrets" },
-    { id: 6,  nom: "Cuisse à confire",                     pu: 6.40,  unite: "kg", cat: "Cuisses & manchons" },
-    { id: 7,  nom: "Cuisse à rôti",                        pu: 7.60,  unite: "kg", cat: "Cuisses & manchons" },
-    { id: 8,  nom: "Manchons",                             pu: 3.90,  unite: "kg", cat: "Cuisses & manchons" },
-    { id: 9,  nom: "Canard gras entier sans le foie < 2,5 kg", pu: 6.60, unite: "kg", cat: "Canard entier & abats" },
-    { id: 10, nom: "Cœur en poche < 350 g",                 pu: 5.00,  unite: "kg", cat: "Canard entier & abats" },
-    { id: 11, nom: "Carcasse",                             pu: 1.00,  unite: "kg", cat: "Canard entier & abats" }
+    { id: 12, nom: "01 - Foie gras extra ~ 650g", pu: 47.1, unite: "kg", cat: "I - Le canard cru", poids: 0.65 },
+    { id: 13, nom: "02 - Foie gras extra déveiné ~ 480g", pu: 50, unite: "kg", cat: "I - Le canard cru", poids: 0.48 },
+    { id: 14, nom: "03 - Magret ~ 420g", pu: 16.9, unite: "kg", cat: "I - Le canard cru", poids: 0.42 },
+    { id: 15, nom: "04 - Aiguillettes en poche s/v ~ 350g", pu: 17.9, unite: "kg", cat: "I - Le canard cru", poids: 0.35 },
+    { id: 16, nom: "05 - Tournedos de magret s/v x2 ~ 350g", pu: 23.7, unite: "kg", cat: "I - Le canard cru", poids: 0.35 },
+    { id: 17, nom: "06 - Cuisse à confire", pu: 6.4, unite: "kg", cat: "I - Le canard cru", poids: 0.2 },
+    { id: 18, nom: "07 - Cuisse à rôtir", pu: 7.6, unite: "kg", cat: "I - Le canard cru", poids: 0.2 },
+    { id: 19, nom: "08 - Manchons", pu: 3.9, unite: "kg", cat: "I - Le canard cru", poids: 0.1 },
+    { id: 20, nom: "09 - Canard gras entier sans le foie ~ 3,5kg", pu: 6.4, unite: "kg", cat: "I - Le canard cru", poids: 3.5 },
+    { id: 21, nom: "10 - Cœur en poche ~ 300g", pu: 5, unite: "kg", cat: "I - Le canard cru", poids: 0.3 },
+    { id: 22, nom: "11 - Carcasse", pu: 1.4, unite: "kg", cat: "I - Le canard cru", poids: 0.4 },
+    { id: 23, nom: "12 - Foie gras extra sous-vide x1 ~ 550g", pu: 37.6, unite: "kg", cat: "II - Le canard congelé", poids: 0.55 },
+    { id: 24, nom: "13 - Foie gras déveiné sous-vide x1 ~ 500g", pu: 42.7, unite: "kg", cat: "II - Le canard congelé", poids: 0.5 },
+    { id: 25, nom: "14 - Escalope de foie gras chasse 1,2,3 en poche ~1kg", pu: 50.7, unite: "kg", cat: "II - Le canard congelé", poids: 1 },
+    { id: 26, nom: "15 - Pépites de foie gras en poche ~ 1kg", pu: 33.7, unite: "kg", cat: "II - Le canard congelé", poids: 1 },
+    { id: 27, nom: "16 - Magret sous-vide et colis 20 pièces", pu: 14.9, unite: "kg", cat: "II - Le canard congelé", poids: 1 },
+    { id: 28, nom: "17 - Foie gras entier mi-cuit trapèze 1kg", pu: 65.9, unite: "pièce", cat: "III - Le foie gras mi-cuit" },
+    { id: 29, nom: "18 - Foie gras entier mi-cuit trapèze 500g", pu: 37.4, unite: "pièce", cat: "III - Le foie gras mi-cuit" },
+    { id: 30, nom: "19 - Foie gras entier mi-cuit coque 450g", pu: 35, unite: "pièce", cat: "III - Le foie gras mi-cuit" },
+    { id: 31, nom: "20 - Foie gras entier mi-cuit coque 350g", pu: 26.7, unite: "pièce", cat: "III - Le foie gras mi-cuit" },
+    { id: 32, nom: "21 - Foie gras entier mi-cuit coque 250g", pu: 19.6, unite: "pièce", cat: "III - Le foie gras mi-cuit" },
+    { id: 33, nom: "22 - Foie gras entier mi-cuit lingot 120g", pu: 9.6, unite: "pièce", cat: "III - Le foie gras mi-cuit" },
+    { id: 34, nom: "23 - Bloc de foie gras 30% Mcx trapèze 1kg", pu: 35, unite: "pièce", cat: "III - Le foie gras mi-cuit" },
+    { id: 35, nom: "24 - Bloc de foie gras 30% Mcx boîte métal 400g", pu: 16.1, unite: "pièce", cat: "III - Le foie gras mi-cuit" },
+    { id: 36, nom: "25 - Magret fumé entier", pu: 25.9, unite: "kg", cat: "IV - Le canard fumé - séché", poids: 1 },
+    { id: 37, nom: "26 - Magret fumé tranché sous-vide", pu: 30.9, unite: "kg", cat: "IV - Le canard fumé - séché", poids: 1 },
+    { id: 38, nom: "27 - Magret séché ou fumé dséché entier", pu: 30.9, unite: "kg", cat: "IV - Le canard fumé - séché", poids: 1 },
+    { id: 39, nom: "28 - Cuisse confites par 4 sous-vide 666g", pu: 13.1, unite: "pièce", cat: "V - Le canard transformé" },
+    { id: 40, nom: "29 - Cuisse confites par 6 sous-vide 1000g", pu: 19, unite: "pièce", cat: "V - Le canard transformé" },
+    { id: 41, nom: "30 - Cuisse confites par 12 en seau", pu: 39.1, unite: "pièce", cat: "V - Le canard transformé" },
+    { id: 42, nom: "31 - Seau de graisse 5kg", pu: 19, unite: "pièce", cat: "V - Le canard transformé" },
+    { id: 43, nom: "32 - Seau de grattons ~ 2kg", pu: 25.7, unite: "kg", cat: "V - Le canard transformé", poids: 2 },
+    { id: 44, nom: "33 - Gésiers confits entiers en poche s/v ~ 300g", pu: 16.6, unite: "kg", cat: "V - Le canard transformé", poids: 0.3 },
+    { id: 45, nom: "34 - Gésiers confits émincés en poche s/v ~ 300g", pu: 16.6, unite: "kg", cat: "V - Le canard transformé", poids: 0.3 },
+    { id: 46, nom: "35 - Viande effilochée en poche s/v ~ 500g", pu: 19, unite: "kg", cat: "V - Le canard transformé", poids: 0.5 },
+    { id: 47, nom: "36 - Cou farci au foie gras sous-vide ~ 320g", pu: 32.7, unite: "kg", cat: "V - Le canard transformé", poids: 0.32 },
+    { id: 48, nom: "37 - Magret farci au foie gras sous-vide ~ 350g", pu: 33.7, unite: "kg", cat: "V - Le canard transformé", poids: 0.35 },
+    { id: 49, nom: "38 - Rillettes au foie gras trapèze ~ 1kg", pu: 18.6, unite: "kg", cat: "V - Le canard transformé", poids: 1 },
+    { id: 50, nom: "39 - Bol de rillettes pur canard ~ 2kg", pu: 12.7, unite: "kg", cat: "V - Le canard transformé", poids: 2 },
+    { id: 51, nom: "40 - Terrine au foie de canard (20% Fg) trapèze ~ 1kg", pu: 21.4, unite: "kg", cat: "V - Le canard transformé", poids: 1 },
+    { id: 52, nom: "41 - Foie gras entier 100g «Weck»", pu: 10.3, unite: "pièce", cat: "VI - Le canard en conserve" },
+    { id: 53, nom: "42 - Foie gras entier 120g «Le Parfait»", pu: 11.3, unite: "pièce", cat: "VI - Le canard en conserve" },
+    { id: 54, nom: "43 - Foie gras entier 190g «Le Parfait»", pu: 17.1, unite: "pièce", cat: "VI - Le canard en conserve" },
+    { id: 55, nom: "44 - Foie gras entier 300g «Le Parfait»", pu: 23.6, unite: "pièce", cat: "VI - Le canard en conserve" },
+    { id: 56, nom: "45 - Bloc de foie gras 80g", pu: 6.4, unite: "pièce", cat: "VI - Le canard en conserve" },
+    { id: 57, nom: "46 - Bloc de foie gras 30% Mcx 200g", pu: 12.1, unite: "pièce", cat: "VI - Le canard en conserve" },
+    { id: 58, nom: "47 - Rillettes pur canard 200g", pu: 4.7, unite: "pièce", cat: "VI - Le canard en conserve" },
+    { id: 59, nom: "48 - Terrine de canard à l'Armagnac 200g", pu: 4.7, unite: "pièce", cat: "VI - Le canard en conserve" },
+    { id: 60, nom: "49 - Terrine de canard au poivre vert  200g", pu: 4.7, unite: "pièce", cat: "VI - Le canard en conserve" },
+    { id: 61, nom: "50 - Terrine nature de canard 200g", pu: 4.2, unite: "pièce", cat: "VI - Le canard en conserve" },
+    { id: 62, nom: "51 - Terrine au foie de canard (20%) 200g", pu: 7.1, unite: "pièce", cat: "VI - Le canard en conserve" },
+    { id: 63, nom: "52 - Cou farci au foie gras 320g net eg", pu: 12.8, unite: "pièce", cat: "VI - Le canard en conserve" },
+    { id: 64, nom: "53 - Magret fourré foie gras 320g net eg", pu: 13.8, unite: "pièce", cat: "VI - Le canard en conserve" },
+    { id: 65, nom: "54 - Cuisses confites x2 360g net eg", pu: 10.3, unite: "pièce", cat: "VI - Le canard en conserve" },
+    { id: 66, nom: "55 - Manchons confits x6 440g net eg", pu: 9.4, unite: "pièce", cat: "VI - Le canard en conserve" },
+    { id: 67, nom: "56 - Graisse 320g", pu: 3.1, unite: "pièce", cat: "VI - Le canard en conserve" },
+    { id: 68, nom: "57 - Gésiers confits 200g net eg", pu: 8.7, unite: "pièce", cat: "VI - Le canard en conserve" },
   ];
   lsSet(K_T, tarifs);
 }
@@ -986,7 +1032,7 @@ $("setTitle").value = settings.titre;
 $("setEmail").value = settings.email;
 $("setAuto").checked = !!settings.autoEmail;
 $("btnSetSave").addEventListener("click", function(){
-  settings.titre = $("setTitle").value.trim() || "BAYLE";
+  settings.titre = $("setTitle").value.trim() || "Domaine de Limagne (Commande avant le 03/12)";
   settings.email = $("setEmail").value.trim();
   settings.autoEmail = $("setAuto").checked;
   lsSet(K_S, settings);
@@ -1067,4 +1113,5 @@ syncHash();
 </script>
 
 <script type="module" src="./Com Domaine de Limagne (avant le 0312)_files/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" nonce="L6D72DSs2Wi57vBGx3jtTw==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;36b4216ae2dc4d5488c249161e71fe1e&quot;,&quot;spa&quot;:2}" crossorigin="anonymous"></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" nonce="CNBHEwI5rRQiry/n6RqD2A==" data-cf-beacon='{"version":"2024.11.0","token":"36b4216ae2dc4d5488c249161e71fe1e","spa":2}' crossorigin="anonymous"></script>
 </body></html>
