@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<!-- saved from url=(0123)file:///C:/Users/tytournel/Downloads/Commandes%20%E2%80%94%20Domaine%20de%20Limagne%20(Commande%20avant%20le%2003_12).html# -->
+<html lang="fr" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Commandes — Domaine de Limagne (Commande avant le 03/12)</title>
+<style>
+  :root{
+    --bg:#f1f5f9; --card:#ffffff; --ink:#0f172a; --muted:#64748b;
+    --accent:#0f766e; --accent-dk:#115e59; --line:#e2e8f0; --err:#dc2626; --ok:#16a34a;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.45}
+  .wrap{max-width:860px;margin:0 auto;padding:16px}
+  header.app{background:var(--accent);color:#fff;padding:18px 16px;text-align:center}
+  header.app h1{margin:0;font-size:1.35rem;letter-spacing:.3px}
+  header.app p{margin:4px 0 0;font-size:.9rem;opacity:.85}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;margin:14px 0;box-shadow:0 1px 2px rgba(15,23,42,.05)}
+  h2{margin:0 0 12px;font-size:1.1rem}
+  h3{margin:16px 0 8px;font-size:.95rem;color:var(--muted);text-transform:uppercase;letter-spacing:.4px}
+  label{display:block;font-weight:600;font-size:.9rem;margin:10px 0 4px}
+  input[type=text],input[type=tel],input[type=number],input[type=email],input[type=url],select,textarea{
+    width:100%;padding:10px 12px;border:1px solid #cbd5e1;border-radius:8px;font-size:1rem;background:#fff;color:var(--ink)}
+  input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+  @media(max-width:600px){.grid2,.grid3{grid-template-columns:1fr}}
+  .err-msg{color:var(--err);font-size:.8rem;margin-top:3px;display:none}
+  .field-invalid input{border-color:var(--err)}
+  .field-invalid .err-msg{display:block}
+  .btn{display:inline-block;border:0;border-radius:8px;padding:11px 18px;font-size:1rem;font-weight:600;cursor:pointer;background:var(--accent);color:#fff}
+  .btn:hover{background:var(--accent-dk)}
+  .btn.ghost{background:#fff;color:var(--accent);border:1px solid var(--accent)}
+  .btn.danger{background:#fff;color:var(--err);border:1px solid var(--err);padding:6px 10px;font-size:.8rem}
+  .btn.small{padding:6px 10px;font-size:.8rem;background:var(--accent)}
+  .btn.small.ghost{color:var(--accent);background:#fff}
+  .btn-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .total-bar{display:flex;justify-content:space-between;align-items:center;background:#f0fdfa;border:1px solid #99f6e4;border-radius:10px;padding:12px 16px;margin-top:16px;font-size:1.05rem}
+  .total-bar b{font-size:1.2rem;color:var(--accent-dk)}
+  .prod{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+  .prod:last-child{border-bottom:0}
+  .prod-info{flex:1}
+  .prod-name{font-weight:600}
+  .prod-price{font-size:.85rem;color:var(--muted)}
+  .prod .qty{width:110px;text-align:right}
+  .prod-unit{font-size:.8rem;color:var(--muted);width:52px}
+  .cat-title{font-size:.78rem;font-weight:700;color:var(--accent-dk);text-transform:uppercase;letter-spacing:.6px;margin:16px 0 2px;padding-bottom:4px;border-bottom:2px solid #99f6e4}
+  .cat-title:first-child{margin-top:0}
+  .muted{color:var(--muted);font-size:.9rem}
+  .num-badge{display:inline-block;background:#134e4a;color:#5eead4;font-weight:700;font-size:1.3rem;border-radius:8px;padding:6px 14px;letter-spacing:1px}
+  table{width:100%;border-collapse:collapse;font-size:.92rem}
+  th,td{padding:8px 8px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:#f8fafc;font-size:.8rem;text-transform:uppercase;letter-spacing:.4px;color:var(--muted)}
+  td.r,th.r{text-align:right}
+  .tabs{display:flex;gap:6px;margin:14px 0;flex-wrap:wrap}
+  .tab-btn{border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:999px;padding:8px 18px;font-size:.9rem;font-weight:600;cursor:pointer}
+  .tab-btn.active{background:var(--accent);border-color:var(--accent);color:#fff}
+  .stat-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+  .stat{background:#f0fdfa;border:1px solid #99f6e4;border-radius:10px;padding:10px 16px;font-size:.9rem}
+  .stat b{display:block;font-size:1.15rem;color:var(--accent-dk)}
+  .banner{max-width:860px;margin:12px auto 0;padding:10px 14px;background:#fef3c7;border:1px solid #f59e0b;border-radius:10px;font-size:.9rem}
+  .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#0f172a;color:#fff;padding:10px 20px;border-radius:999px;font-size:.9rem;opacity:0;transition:opacity .3s;pointer-events:none;z-index:99}
+  .toast.show{opacity:1}
+  .modal{position:fixed;inset:0;background:rgba(15,23,42,.55);display:flex;align-items:center;justify-content:center;padding:16px;z-index:50}
+  .modal-inner{background:#fff;border-radius:12px;max-width:560px;width:100%;max-height:90vh;overflow:auto;padding:20px}
+  .qr-box{background:#fff;padding:10px;display:inline-block;border:1px solid var(--line);border-radius:10px}
+  .qr-box canvas,.qr-box img{display:block}
+  footer{max-width:860px;margin:0 auto;padding:6px 16px 40px;text-align:right}
+  footer a{color:#94a3b8;font-size:.75rem;text-decoration:none}
+  footer a:hover{color:var(--muted)}
+  #printZone{display:none}
+  @media print{
+    body.printing > *:not(#printZone){display:none !important}
+    body.printing #printZone{display:block !important}
+    #printZone{font-size:13px;color:#000}
+    #printZone h1{margin:0 0 2px;font-size:20px}
+    #printZone h2{margin:0 0 10px;font-size:15px}
+    #printZone table{width:100%;border-collapse:collapse}
+    #printZone th,#printZone td{border:1px solid #999;padding:5px 7px;font-size:12px;text-align:left}
+    #printZone td.r,#printZone th.r{text-align:right}
+    #printZone .qr-sheet{text-align:center;padding-top:30px}
+    #printZone .qr-sheet img,#printZone .qr-sheet canvas{width:280px;height:280px;margin:14px auto}
+  }
+</style>
+
+<!-- ============================================================
+     PROTECTION PAR MOT DE PASSE
+     ➜ Pour changer le mot de passe : modifiez la ligne
+       var MOT_DE_PASSE = "..."  ci-dessous (gardez les guillemets).
+     Le mot de passe n'est redemandé qu'une fois par session
+     de navigation (fermeture du navigateur = redemandé).
+     ============================================================ -->
+<style>
+  html.pending body{display:none !important}
+  #lockScreen{position:fixed;inset:0;background:#0f172a;display:flex;align-items:center;justify-content:center;padding:16px;z-index:9999}
+  #lockScreen .lock-card{background:#fff;border-radius:12px;padding:28px 24px;max-width:360px;width:100%;text-align:center;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;box-shadow:0 10px 30px rgba(0,0,0,.3)}
+  #lockScreen h1{font-size:1.15rem;margin:0 0 6px;color:#0f172a}
+  #lockScreen p{font-size:.85rem;color:#64748b;margin:0 0 14px}
+  #lockScreen input{width:100%;padding:10px 12px;border:1px solid #cbd5e1;border-radius:8px;font-size:1rem;margin-bottom:6px;box-sizing:border-box}
+  #lockScreen input:focus{outline:2px solid #0f766e;outline-offset:1px;border-color:#0f766e}
+  #lockScreen button{width:100%;border:0;border-radius:8px;padding:11px;background:#0f766e;color:#fff;font-weight:600;font-size:1rem;cursor:pointer}
+  #lockScreen button:hover{background:#115e59}
+  #lockScreen .lock-err{color:#dc2626;font-size:.8rem;min-height:18px;margin:4px 0 8px}
+</style>
+<script>
+var MOT_DE_PASSE = "limagne2026";
+(function () {
+  var dejaOk = false;
+  try { dejaOk = sessionStorage.getItem("accesCommandeOk") === "oui"; } catch (e) {}
+  function deverrouiller() {
+    try { sessionStorage.setItem("accesCommandeOk", "oui"); } catch (e) {}
+    document.documentElement.classList.remove("pending");
+    var s = document.getElementById("lockScreen");
+    if (s && s.parentNode) s.parentNode.removeChild(s);
+  }
+  if (dejaOk) { document.documentElement.classList.remove("pending"); return; }
+  function creerVerrou() {
+    if (document.getElementById("lockScreen")) return;
+    var d = document.createElement("div");
+    d.id = "lockScreen";
+    d.innerHTML = '<div class="lock-card"><h1>🔒 Accès réservé</h1>' +
+      '<p>Cet applicatif de commande est protégé.<br>Entrez le mot de passe pour continuer.</p>' +
+      '<input type="password" id="lockPw" placeholder="Mot de passe" autocomplete="current-password">' +
+      '<div class="lock-err" id="lockErr"></div>' +
+      '<button id="lockBtn">Valider</button></div>';
+    document.documentElement.appendChild(d);
+    var inp = document.getElementById("lockPw");
+    function essayer() {
+      if (inp.value === MOT_DE_PASSE) { deverrouiller(); }
+      else {
+        document.getElementById("lockErr").textContent = "Mot de passe incorrect.";
+        inp.value = "";
+        inp.focus();
+      }
+    }
+    document.getElementById("lockBtn").addEventListener("click", essayer);
+    inp.addEventListener("keydown", function (e) { if (e.key === "Enter") essayer(); });
+    setTimeout(function () { inp.focus(); }, 50);
+  }
+  if (document.body) { creerVerrou(); }
+  else { document.addEventListener("DOMContentLoaded", creerVerrou); }
+})();
+</script>
+</head>
+<body>
+
+<header class="app">
+  <h1 id="appTitle">Domaine de Limagne (Commande avant le 03/12)</h1>
+  <p id="appSub">Saisie de commande</p>
+</header>
+
+<div class="banner" id="banner" style="display:none">
+  ⚠️ Mode aperçu : les données saisies ne seront pas conservées. Téléchargez puis hébergez ce fichier pour une utilisation réelle.
+</div>
+
+<!-- ============ VUE COLLABORATEURS : SAISIE ============ -->
+<div id="publicView" style="display: block;">
+  <div class="wrap">
+
+    <div class="card">
+      <h2>🧾 Votre commande</h2>
+      <p class="muted">Les champs marqués d'un <b>*</b> sont obligatoires.</p>
+
+      <div class="grid3">
+        <div id="fNom">
+          <label for="nom">Nom *</label>
+          <input type="text" id="nom" autocomplete="family-name" placeholder="Votre nom">
+          <div class="err-msg">Le nom est obligatoire.</div>
+        </div>
+        <div id="fPrenom">
+          <label for="prenom">Prénom *</label>
+          <input type="text" id="prenom" autocomplete="given-name" placeholder="Votre prénom">
+          <div class="err-msg">Le prénom est obligatoire.</div>
+        </div>
+        <div id="fTel">
+          <label for="tel">Téléphone *</label>
+          <input type="tel" id="tel" autocomplete="tel" placeholder="06 12 34 56 78">
+          <div class="err-msg">Numéro de téléphone invalide (ex. 06 12 34 56 78).</div>
+        </div>
+      </div>
+
+      <h3>Produits</h3>
+      <div id="catalogue"><div class="cat-title">I - Le canard cru</div><div class="prod"><div class="prod-info"><div class="prod-name">01 - Foie gras extra ~ 650g</div><div class="prod-price">47,10&nbsp;€ HT / kg · ~0,65 kg par pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="12" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">02 - Foie gras extra déveiné ~ 480g</div><div class="prod-price">50,00&nbsp;€ HT / kg · ~0,48 kg par pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="13" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">03 - Magret ~ 420g</div><div class="prod-price">16,90&nbsp;€ HT / kg · ~0,42 kg par pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="14" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">04 - Aiguillettes en poche s/v ~ 350g</div><div class="prod-price">17,90&nbsp;€ HT / kg · ~0,35 kg par pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="15" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">05 - Tournedos de magret s/v x2 ~ 350g</div><div class="prod-price">23,70&nbsp;€ HT / kg · ~0,35 kg par pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="16" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">06 - Cuisse à confire</div><div class="prod-price">6,40&nbsp;€ HT / kg · ~0,2 kg par pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="17" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">07 - Cuisse à rôtir</div><div class="prod-price">7,60&nbsp;€ HT / kg · ~0,2 kg par pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="18" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">08 - Manchons</div><div class="prod-price">3,90&nbsp;€ HT / kg · ~0,1 kg par pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="19" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">09 - Canard gras entier sans le foie ~ 3,5kg</div><div class="prod-price">6,40&nbsp;€ HT / kg · ~3,5 kg par pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="20" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">10 - Cœur en poche ~ 300g</div><div class="prod-price">5,00&nbsp;€ HT / kg · ~0,3 kg par pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="21" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">11 - Carcasse</div><div class="prod-price">1,40&nbsp;€ HT / kg · ~0,4 kg par pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="22" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="cat-title">II - Le canard congelé</div><div class="prod"><div class="prod-info"><div class="prod-name">12 - Foie gras extra sous-vide x1 ~ 550g</div><div class="prod-price">37,60&nbsp;€ HT / kg · ~0,55 kg par pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="23" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">13 - Foie gras déveiné sous-vide x1 ~ 500g</div><div class="prod-price">42,70&nbsp;€ HT / kg · ~0,5 kg par pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="24" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">14 - Escalope de foie gras chasse 1,2,3 en poche ~1kg</div><div class="prod-price">50,70&nbsp;€ HT / kg · ~1 kg par pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="25" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">15 - Pépites de foie gras en poche ~ 1kg</div><div class="prod-price">33,70&nbsp;€ HT / kg · ~1 kg par pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="26" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">16 - Magret sous-vide et colis 20 pièces</div><div class="prod-price">14,90&nbsp;€ HT / kg · ~1 kg par pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="27" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="cat-title">III - Le foie gras mi-cuit</div><div class="prod"><div class="prod-info"><div class="prod-name">17 - Foie gras entier mi-cuit trapèze 1kg</div><div class="prod-price">65,90&nbsp;€ HT / pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="28" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">18 - Foie gras entier mi-cuit trapèze 500g</div><div class="prod-price">37,40&nbsp;€ HT / pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="29" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">19 - Foie gras entier mi-cuit coque 450g</div><div class="prod-price">35,00&nbsp;€ HT / pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="30" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">20 - Foie gras entier mi-cuit coque 350g</div><div class="prod-price">26,70&nbsp;€ HT / pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="31" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">21 - Foie gras entier mi-cuit coque 250g</div><div class="prod-price">19,60&nbsp;€ HT / pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="32" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">22 - Foie gras entier mi-cuit lingot 120g</div><div class="prod-price">9,60&nbsp;€ HT / pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="33" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">23 - Bloc de foie gras 30% Mcx trapèze 1kg</div><div class="prod-price">35,00&nbsp;€ HT / pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="34" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">24 - Bloc de foie gras 30% Mcx boîte métal 400g</div><div class="prod-price">16,10&nbsp;€ HT / pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="35" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="cat-title">IV - Le canard fumé - séché</div><div class="prod"><div class="prod-info"><div class="prod-name">25 - Magret fumé entier</div><div class="prod-price">25,90&nbsp;€ HT / kg · ~1 kg par pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="36" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">26 - Magret fumé tranché sous-vide</div><div class="prod-price">30,90&nbsp;€ HT / kg · ~1 kg par pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="37" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">27 - Magret séché ou fumé dséché entier</div><div class="prod-price">30,90&nbsp;€ HT / kg · ~1 kg par pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="38" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="cat-title">V - Le canard transformé</div><div class="prod"><div class="prod-info"><div class="prod-name">28 - Cuisse confites par 4 sous-vide 666g</div><div class="prod-price">13,10&nbsp;€ HT / pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="39" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">29 - Cuisse confites par 6 sous-vide 1000g</div><div class="prod-price">19,00&nbsp;€ HT / pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="40" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">30 - Cuisse confites par 12 en seau</div><div class="prod-price">39,10&nbsp;€ HT / pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="41" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">31 - Seau de graisse 5kg</div><div class="prod-price">19,00&nbsp;€ HT / pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="42" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">32 - Seau de grattons ~ 2kg</div><div class="prod-price">25,70&nbsp;€ HT / kg · ~2 kg par pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="43" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">33 - Gésiers confits entiers en poche s/v ~ 300g</div><div class="prod-price">16,60&nbsp;€ HT / kg · ~0,3 kg par pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="44" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">34 - Gésiers confits émincés en poche s/v ~ 300g</div><div class="prod-price">16,60&nbsp;€ HT / kg · ~0,3 kg par pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="45" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">35 - Viande effilochée en poche s/v ~ 500g</div><div class="prod-price">19,00&nbsp;€ HT / kg · ~0,5 kg par pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="46" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">36 - Cou farci au foie gras sous-vide ~ 320g</div><div class="prod-price">32,70&nbsp;€ HT / kg · ~0,32 kg par pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="47" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">37 - Magret farci au foie gras sous-vide ~ 350g</div><div class="prod-price">33,70&nbsp;€ HT / kg · ~0,35 kg par pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="48" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">38 - Rillettes au foie gras trapèze ~ 1kg</div><div class="prod-price">18,60&nbsp;€ HT / kg · ~1 kg par pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="49" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">39 - Bol de rillettes pur canard ~ 2kg</div><div class="prod-price">12,70&nbsp;€ HT / kg · ~2 kg par pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="50" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">40 - Terrine au foie de canard (20% Fg) trapèze ~ 1kg</div><div class="prod-price">21,40&nbsp;€ HT / kg · ~1 kg par pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="51" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="cat-title">VI - Le canard en conserve</div><div class="prod"><div class="prod-info"><div class="prod-name">41 - Foie gras entier 100g «Weck»</div><div class="prod-price">10,30&nbsp;€ HT / pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="52" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">42 - Foie gras entier 120g «Le Parfait»</div><div class="prod-price">11,30&nbsp;€ HT / pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="53" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">43 - Foie gras entier 190g «Le Parfait»</div><div class="prod-price">17,10&nbsp;€ HT / pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="54" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">44 - Foie gras entier 300g «Le Parfait»</div><div class="prod-price">23,60&nbsp;€ HT / pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="55" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">45 - Bloc de foie gras 80g</div><div class="prod-price">6,40&nbsp;€ HT / pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="56" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">46 - Bloc de foie gras 30% Mcx 200g</div><div class="prod-price">12,10&nbsp;€ HT / pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="57" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">47 - Rillettes pur canard 200g</div><div class="prod-price">4,70&nbsp;€ HT / pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="58" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">48 - Terrine de canard à l'Armagnac 200g</div><div class="prod-price">4,70&nbsp;€ HT / pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="59" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">49 - Terrine de canard au poivre vert  200g</div><div class="prod-price">4,70&nbsp;€ HT / pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="60" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">50 - Terrine nature de canard 200g</div><div class="prod-price">4,20&nbsp;€ HT / pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="61" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">51 - Terrine au foie de canard (20%) 200g</div><div class="prod-price">7,10&nbsp;€ HT / pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="62" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">52 - Cou farci au foie gras 320g net eg</div><div class="prod-price">12,80&nbsp;€ HT / pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="63" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">53 - Magret fourré foie gras 320g net eg</div><div class="prod-price">13,80&nbsp;€ HT / pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="64" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">54 - Cuisses confites x2 360g net eg</div><div class="prod-price">10,30&nbsp;€ HT / pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="65" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">55 - Manchons confits x6 440g net eg</div><div class="prod-price">9,40&nbsp;€ HT / pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="66" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">56 - Graisse 320g</div><div class="prod-price">3,10&nbsp;€ HT / pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="67" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div><div class="prod"><div class="prod-info"><div class="prod-name">57 - Gésiers confits 200g net eg</div><div class="prod-price">8,70&nbsp;€ HT / pièce</div></div><input class="qty" type="number" inputmode="decimal" data-id="68" step="1" min="1" placeholder="0"><span class="prod-unit">pièce(s)</span></div></div>
+      <div class="total-bar"><span>Total de la commande</span><b id="totalLive">0,00&nbsp;€ HT</b></div>
+
+      <label for="note" style="margin-top:14px">Remarque (facultatif)</label>
+      <textarea id="note" rows="2" placeholder="Ex. : précisions, horaire de retrait…"></textarea>
+
+      <div class="btn-row">
+        <button class="btn" id="btnSubmit">✅ Enregistrer la commande</button>
+      </div>
+      <div class="err-msg" id="errNoProduct" style="display:none">Sélectionnez au moins un produit (quantité supérieure à 0).</div>
+    </div>
+
+    <!-- Confirmation de commande -->
+    <div class="card" id="resultCard" style="display:none">
+      <h2>✅ Commande enregistrée</h2>
+      <p>Numéro de commande : <span class="num-badge" id="resNum"></span></p>
+      <p class="muted" id="resClient"></p>
+      <div id="resLines"></div>
+      <div class="total-bar"><span>Total à régler</span><b id="resTotal"></b></div>
+      <p class="muted" id="resNote" style="display:none"></p>
+      <div class="btn-row">
+        <button class="btn ghost" id="btnPrintRecap">🖨️ Imprimer le récapitulatif</button>
+        <button class="btn ghost" id="btnMailRecap">✉️ Envoyer par email</button>
+        <button class="btn ghost" id="btnDownloadOrder">⬇️ Télécharger (fichier)</button>
+        <button class="btn" id="btnNewOrder">➕ Nouvelle commande</button>
+      </div>
+      <p class="muted" id="emailHint" style="margin-top:10px"></p>
+      <p class="muted" id="mailStatus" style="display:none;margin-top:8px"></p>
+    </div>
+
+  </div>
+</div>
+
+<!-- ============ VUE RESPONSABLE ============ -->
+<div id="adminView" style="display: none;">
+  <div class="wrap">
+
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="commandes">📋 Commandes</button>
+      <button class="tab-btn" data-tab="tarifs">🏷️ Tarifs</button>
+      <button class="tab-btn" data-tab="outils">🛠️ Outils</button>
+      <button class="btn small ghost" id="btnBackPublic" style="margin-left:auto">← Saisie</button>
+    </div>
+
+    <!-- Onglet commandes -->
+    <div id="tab-commandes" style="display: block;">
+      <div class="card">
+        <h2>Récapitulatif des commandes</h2>
+        <div class="stat-row" id="stats"><div class="stat">Commandes<b>0</b></div><div class="stat">Chiffre d'affaires<b>0,00&nbsp;€ HT</b></div></div>
+        <div class="btn-row" style="margin-top:0;margin-bottom:14px">
+          <button class="btn ghost" id="btnPrintGeneral">🖨️ Récapitulatif général</button>
+          <button class="btn ghost" id="btnExportCsv">📊 Export Excel (.csv)</button>
+          <button class="btn ghost" id="btnImport">⬆️ Importer des commandes</button>
+          <input type="file" id="importInput" accept=".json,application/json" multiple="" style="display:none">
+        </div>
+        <div style="overflow-x:auto">
+        <table id="ordersTable">
+          <thead><tr><th>N°</th><th>Date</th><th>Client</th><th>Téléphone</th><th class="r">Total</th><th>Actions</th></tr></thead>
+          <tbody id="ordersBody"></tbody>
+        </table>
+        </div>
+        <p class="muted" id="ordersEmpty" style="display: block;">Aucune commande pour le moment.</p>
+      </div>
+    </div>
+
+    <!-- Onglet tarifs -->
+    <div id="tab-tarifs" style="display: none;">
+      <div class="card">
+        <h2>Gestion des tarifs</h2>
+        <p class="muted">Ajoutez, modifiez ou supprimez les produits et regroupez-les par <b>catégorie</b> (les catégories structurent le formulaire de saisie). La tarification est <b>à la pièce</b> ou <b>au kg</b>.</p>
+        <div class="grid2">
+          <div>
+            <label for="tNom">Produit</label>
+            <input type="text" id="tNom" placeholder="Ex. Pommes Gala">
+          </div>
+          <div>
+            <label for="tCat">Catégorie</label>
+            <input type="text" id="tCat" list="catList" placeholder="Ex. Foie gras">
+            <datalist id="catList"><option value="I - Le canard cru"></option><option value="II - Le canard congelé"></option><option value="III - Le foie gras mi-cuit"></option><option value="IV - Le canard fumé - séché"></option><option value="V - Le canard transformé"></option><option value="VI - Le canard en conserve"></option></datalist>
+          </div>
+        </div>
+        <div class="grid2" style="margin-top:10px">
+          <div>
+            <label for="tPrix">Prix (€ HT)</label>
+            <input type="number" id="tPrix" step="0.01" min="0.01" placeholder="2,80">
+          </div>
+          <div>
+            <label for="tUnite">Vente</label>
+            <select id="tUnite">
+              <option value="pièce">À la pièce</option>
+              <option value="kg">Au kg</option>
+            </select>
+          </div>
+        </div>
+        <div id="fTPoids" style="margin-top: 10px; display: none;">
+          <label for="tPoids">Poids moyen d'une pièce (kg) <span class="muted">— pour les produits au kg : le client commande en pièces</span></label>
+          <input type="number" id="tPoids" step="0.01" min="0.01" placeholder="Ex. 0,65">
+          <div class="err-msg" id="tPoidsHint" style="display:block;color:var(--muted)">Facultatif. Si renseigné, le client saisit un nombre de pièces et le total est calculé avec ce poids moyen. Sinon, le client saisit directement un poids en kg.</div>
+        </div>
+        <div class="btn-row" style="margin-top:14px">
+          <button class="btn" id="btnTarifSave">➕ Ajouter le produit</button>
+          <button class="btn ghost" id="btnTarifCancel" style="display: none;">Annuler la modification</button>
+        </div>
+        <div style="overflow-x:auto;margin-top:16px">
+        <table>
+          <thead><tr><th>Produit</th><th>Catégorie</th><th class="r">Prix HT</th><th>Vente</th><th>Poids/pièce</th><th>Actions</th></tr></thead>
+          <tbody id="tarifsBody"><tr><td>01 - Foie gras extra ~ 650g</td><td class="muted">I - Le canard cru</td><td class="r">47,10 € HT</td><td>au kg</td><td>0,65 kg</td><td><button class="btn small ghost" data-act="edit" data-id="12">✏️</button> <button class="btn danger" data-act="del" data-id="12">🗑</button></td></tr><tr><td>02 - Foie gras extra déveiné ~ 480g</td><td class="muted">I - Le canard cru</td><td class="r">50,00 € HT</td><td>au kg</td><td>0,48 kg</td><td><button class="btn small ghost" data-act="edit" data-id="13">✏️</button> <button class="btn danger" data-act="del" data-id="13">🗑</button></td></tr><tr><td>03 - Magret ~ 420g</td><td class="muted">I - Le canard cru</td><td class="r">16,90 € HT</td><td>au kg</td><td>0,42 kg</td><td><button class="btn small ghost" data-act="edit" data-id="14">✏️</button> <button class="btn danger" data-act="del" data-id="14">🗑</button></td></tr><tr><td>04 - Aiguillettes en poche s/v ~ 350g</td><td class="muted">I - Le canard cru</td><td class="r">17,90 € HT</td><td>au kg</td><td>0,35 kg</td><td><button class="btn small ghost" data-act="edit" data-id="15">✏️</button> <button class="btn danger" data-act="del" data-id="15">🗑</button></td></tr><tr><td>05 - Tournedos de magret s/v x2 ~ 350g</td><td class="muted">I - Le canard cru</td><td class="r">23,70 € HT</td><td>au kg</td><td>0,35 kg</td><td><button class="btn small ghost" data-act="edit" data-id="16">✏️</button> <button class="btn danger" data-act="del" data-id="16">🗑</button></td></tr><tr><td>06 - Cuisse à confire</td><td class="muted">I - Le canard cru</td><td class="r">6,40 € HT</td><td>au kg</td><td>0,2 kg</td><td><button class="btn small ghost" data-act="edit" data-id="17">✏️</button> <button class="btn danger" data-act="del" data-id="17">🗑</button></td></tr><tr><td>07 - Cuisse à rôtir</td><td class="muted">I - Le canard cru</td><td class="r">7,60 € HT</td><td>au kg</td><td>0,2 kg</td><td><button class="btn small ghost" data-act="edit" data-id="18">✏️</button> <button class="btn danger" data-act="del" data-id="18">🗑</button></td></tr><tr><td>08 - Manchons</td><td class="muted">I - Le canard cru</td><td class="r">3,90 € HT</td><td>au kg</td><td>0,1 kg</td><td><button class="btn small ghost" data-act="edit" data-id="19">✏️</button> <button class="btn danger" data-act="del" data-id="19">🗑</button></td></tr><tr><td>09 - Canard gras entier sans le foie ~ 3,5kg</td><td class="muted">I - Le canard cru</td><td class="r">6,40 € HT</td><td>au kg</td><td>3,5 kg</td><td><button class="btn small ghost" data-act="edit" data-id="20">✏️</button> <button class="btn danger" data-act="del" data-id="20">🗑</button></td></tr><tr><td>10 - Cœur en poche ~ 300g</td><td class="muted">I - Le canard cru</td><td class="r">5,00 € HT</td><td>au kg</td><td>0,3 kg</td><td><button class="btn small ghost" data-act="edit" data-id="21">✏️</button> <button class="btn danger" data-act="del" data-id="21">🗑</button></td></tr><tr><td>11 - Carcasse</td><td class="muted">I - Le canard cru</td><td class="r">1,40 € HT</td><td>au kg</td><td>0,4 kg</td><td><button class="btn small ghost" data-act="edit" data-id="22">✏️</button> <button class="btn danger" data-act="del" data-id="22">🗑</button></td></tr><tr><td>12 - Foie gras extra sous-vide x1 ~ 550g</td><td class="muted">II - Le canard congelé</td><td class="r">37,60 € HT</td><td>au kg</td><td>0,55 kg</td><td><button class="btn small ghost" data-act="edit" data-id="23">✏️</button> <button class="btn danger" data-act="del" data-id="23">🗑</button></td></tr><tr><td>13 - Foie gras déveiné sous-vide x1 ~ 500g</td><td class="muted">II - Le canard congelé</td><td class="r">42,70 € HT</td><td>au kg</td><td>0,5 kg</td><td><button class="btn small ghost" data-act="edit" data-id="24">✏️</button> <button class="btn danger" data-act="del" data-id="24">🗑</button></td></tr><tr><td>14 - Escalope de foie gras chasse 1,2,3 en poche ~1kg</td><td class="muted">II - Le canard congelé</td><td class="r">50,70 € HT</td><td>au kg</td><td>1 kg</td><td><button class="btn small ghost" data-act="edit" data-id="25">✏️</button> <button class="btn danger" data-act="del" data-id="25">🗑</button></td></tr><tr><td>15 - Pépites de foie gras en poche ~ 1kg</td><td class="muted">II - Le canard congelé</td><td class="r">33,70 € HT</td><td>au kg</td><td>1 kg</td><td><button class="btn small ghost" data-act="edit" data-id="26">✏️</button> <button class="btn danger" data-act="del" data-id="26">🗑</button></td></tr><tr><td>16 - Magret sous-vide et colis 20 pièces</td><td class="muted">II - Le canard congelé</td><td class="r">14,90 € HT</td><td>au kg</td><td>1 kg</td><td><button class="btn small ghost" data-act="edit" data-id="27">✏️</button> <button class="btn danger" data-act="del" data-id="27">🗑</button></td></tr><tr><td>17 - Foie gras entier mi-cuit trapèze 1kg</td><td class="muted">III - Le foie gras mi-cuit</td><td class="r">65,90 € HT</td><td>à la pièce</td><td>—</td><td><button class="btn small ghost" data-act="edit" data-id="28">✏️</button> <button class="btn danger" data-act="del" data-id="28">🗑</button></td></tr><tr><td>18 - Foie gras entier mi-cuit trapèze 500g</td><td class="muted">III - Le foie gras mi-cuit</td><td class="r">37,40 € HT</td><td>à la pièce</td><td>—</td><td><button class="btn small ghost" data-act="edit" data-id="29">✏️</button> <button class="btn danger" data-act="del" data-id="29">🗑</button></td></tr><tr><td>19 - Foie gras entier mi-cuit coque 450g</td><td class="muted">III - Le foie gras mi-cuit</td><td class="r">35,00 € HT</td><td>à la pièce</td><td>—</td><td><button class="btn small ghost" data-act="edit" data-id="30">✏️</button> <button class="btn danger" data-act="del" data-id="30">🗑</button></td></tr><tr><td>20 - Foie gras entier mi-cuit coque 350g</td><td class="muted">III - Le foie gras mi-cuit</td><td class="r">26,70 € HT</td><td>à la pièce</td><td>—</td><td><button class="btn small ghost" data-act="edit" data-id="31">✏️</button> <button class="btn danger" data-act="del" data-id="31">🗑</button></td></tr><tr><td>21 - Foie gras entier mi-cuit coque 250g</td><td class="muted">III - Le foie gras mi-cuit</td><td class="r">19,60 € HT</td><td>à la pièce</td><td>—</td><td><button class="btn small ghost" data-act="edit" data-id="32">✏️</button> <button class="btn danger" data-act="del" data-id="32">🗑</button></td></tr><tr><td>22 - Foie gras entier mi-cuit lingot 120g</td><td class="muted">III - Le foie gras mi-cuit</td><td class="r">9,60 € HT</td><td>à la pièce</td><td>—</td><td><button class="btn small ghost" data-act="edit" data-id="33">✏️</button> <button class="btn danger" data-act="del" data-id="33">🗑</button></td></tr><tr><td>23 - Bloc de foie gras 30% Mcx trapèze 1kg</td><td class="muted">III - Le foie gras mi-cuit</td><td class="r">35,00 € HT</td><td>à la pièce</td><td>—</td><td><button class="btn small ghost" data-act="edit" data-id="34">✏️</button> <button class="btn danger" data-act="del" data-id="34">🗑</button></td></tr><tr><td>24 - Bloc de foie gras 30% Mcx boîte métal 400g</td><td class="muted">III - Le foie gras mi-cuit</td><td class="r">16,10 € HT</td><td>à la pièce</td><td>—</td><td><button class="btn small ghost" data-act="edit" data-id="35">✏️</button> <button class="btn danger" data-act="del" data-id="35">🗑</button></td></tr><tr><td>25 - Magret fumé entier</td><td class="muted">IV - Le canard fumé - séché</td><td class="r">25,90 € HT</td><td>au kg</td><td>1 kg</td><td><button class="btn small ghost" data-act="edit" data-id="36">✏️</button> <button class="btn danger" data-act="del" data-id="36">🗑</button></td></tr><tr><td>26 - Magret fumé tranché sous-vide</td><td class="muted">IV - Le canard fumé - séché</td><td class="r">30,90 € HT</td><td>au kg</td><td>1 kg</td><td><button class="btn small ghost" data-act="edit" data-id="37">✏️</button> <button class="btn danger" data-act="del" data-id="37">🗑</button></td></tr><tr><td>27 - Magret séché ou fumé dséché entier</td><td class="muted">IV - Le canard fumé - séché</td><td class="r">30,90 € HT</td><td>au kg</td><td>1 kg</td><td><button class="btn small ghost" data-act="edit" data-id="38">✏️</button> <button class="btn danger" data-act="del" data-id="38">🗑</button></td></tr><tr><td>28 - Cuisse confites par 4 sous-vide 666g</td><td class="muted">V - Le canard transformé</td><td class="r">13,10 € HT</td><td>à la pièce</td><td>—</td><td><button class="btn small ghost" data-act="edit" data-id="39">✏️</button> <button class="btn danger" data-act="del" data-id="39">🗑</button></td></tr><tr><td>29 - Cuisse confites par 6 sous-vide 1000g</td><td class="muted">V - Le canard transformé</td><td class="r">19,00 € HT</td><td>à la pièce</td><td>—</td><td><button class="btn small ghost" data-act="edit" data-id="40">✏️</button> <button class="btn danger" data-act="del" data-id="40">🗑</button></td></tr><tr><td>30 - Cuisse confites par 12 en seau</td><td class="muted">V - Le canard transformé</td><td class="r">39,10 € HT</td><td>à la pièce</td><td>—</td><td><button class="btn small ghost" data-act="edit" data-id="41">✏️</button> <button class="btn danger" data-act="del" data-id="41">🗑</button></td></tr><tr><td>31 - Seau de graisse 5kg</td><td class="muted">V - Le canard transformé</td><td class="r">19,00 € HT</td><td>à la pièce</td><td>—</td><td><button class="btn small ghost" data-act="edit" data-id="42">✏️</button> <button class="btn danger" data-act="del" data-id="42">🗑</button></td></tr><tr><td>32 - Seau de grattons ~ 2kg</td><td class="muted">V - Le canard transformé</td><td class="r">25,70 € HT</td><td>au kg</td><td>2 kg</td><td><button class="btn small ghost" data-act="edit" data-id="43">✏️</button> <button class="btn danger" data-act="del" data-id="43">🗑</button></td></tr><tr><td>33 - Gésiers confits entiers en poche s/v ~ 300g</td><td class="muted">V - Le canard transformé</td><td class="r">16,60 € HT</td><td>au kg</td><td>0,3 kg</td><td><button class="btn small ghost" data-act="edit" data-id="44">✏️</button> <button class="btn danger" data-act="del" data-id="44">🗑</button></td></tr><tr><td>34 - Gésiers confits émincés en poche s/v ~ 300g</td><td class="muted">V - Le canard transformé</td><td class="r">16,60 € HT</td><td>au kg</td><td>0,3 kg</td><td><button class="btn small ghost" data-act="edit" data-id="45">✏️</button> <button class="btn danger" data-act="del" data-id="45">🗑</button></td></tr><tr><td>35 - Viande effilochée en poche s/v ~ 500g</td><td class="muted">V - Le canard transformé</td><td class="r">19,00 € HT</td><td>au kg</td><td>0,5 kg</td><td><button class="btn small ghost" data-act="edit" data-id="46">✏️</button> <button class="btn danger" data-act="del" data-id="46">🗑</button></td></tr><tr><td>36 - Cou farci au foie gras sous-vide ~ 320g</td><td class="muted">V - Le canard transformé</td><td class="r">32,70 € HT</td><td>au kg</td><td>0,32 kg</td><td><button class="btn small ghost" data-act="edit" data-id="47">✏️</button> <button class="btn danger" data-act="del" data-id="47">🗑</button></td></tr><tr><td>37 - Magret farci au foie gras sous-vide ~ 350g</td><td class="muted">V - Le canard transformé</td><td class="r">33,70 € HT</td><td>au kg</td><td>0,35 kg</td><td><button class="btn small ghost" data-act="edit" data-id="48">✏️</button> <button class="btn danger" data-act="del" data-id="48">🗑</button></td></tr><tr><td>38 - Rillettes au foie gras trapèze ~ 1kg</td><td class="muted">V - Le canard transformé</td><td class="r">18,60 € HT</td><td>au kg</td><td>1 kg</td><td><button class="btn small ghost" data-act="edit" data-id="49">✏️</button> <button class="btn danger" data-act="del" data-id="49">🗑</button></td></tr><tr><td>39 - Bol de rillettes pur canard ~ 2kg</td><td class="muted">V - Le canard transformé</td><td class="r">12,70 € HT</td><td>au kg</td><td>2 kg</td><td><button class="btn small ghost" data-act="edit" data-id="50">✏️</button> <button class="btn danger" data-act="del" data-id="50">🗑</button></td></tr><tr><td>40 - Terrine au foie de canard (20% Fg) trapèze ~ 1kg</td><td class="muted">V - Le canard transformé</td><td class="r">21,40 € HT</td><td>au kg</td><td>1 kg</td><td><button class="btn small ghost" data-act="edit" data-id="51">✏️</button> <button class="btn danger" data-act="del" data-id="51">🗑</button></td></tr><tr><td>41 - Foie gras entier 100g «Weck»</td><td class="muted">VI - Le canard en conserve</td><td class="r">10,30 € HT</td><td>à la pièce</td><td>—</td><td><button class="btn small ghost" data-act="edit" data-id="52">✏️</button> <button class="btn danger" data-act="del" data-id="52">🗑</button></td></tr><tr><td>42 - Foie gras entier 120g «Le Parfait»</td><td class="muted">VI - Le canard en conserve</td><td class="r">11,30 € HT</td><td>à la pièce</td><td>—</td><td><button class="btn small ghost" data-act="edit" data-id="53">✏️</button> <button class="btn danger" data-act="del" data-id="53">🗑</button></td></tr><tr><td>43 - Foie gras entier 190g «Le Parfait»</td><td class="muted">VI - Le canard en conserve</td><td class="r">17,10 € HT</td><td>à la pièce</td><td>—</td><td><button class="btn small ghost" data-act="edit" data-id="54">✏️</button> <button class="btn danger" data-act="del" data-id="54">🗑</button></td></tr><tr><td>44 - Foie gras entier 300g «Le Parfait»</td><td class="muted">VI - Le canard en conserve</td><td class="r">23,60 € HT</td><td>à la pièce</td><td>—</td><td><button class="btn small ghost" data-act="edit" data-id="55">✏️</button> <button class="btn danger" data-act="del" data-id="55">🗑</button></td></tr><tr><td>45 - Bloc de foie gras 80g</td><td class="muted">VI - Le canard en conserve</td><td class="r">6,40 € HT</td><td>à la pièce</td><td>—</td><td><button class="btn small ghost" data-act="edit" data-id="56">✏️</button> <button class="btn danger" data-act="del" data-id="56">🗑</button></td></tr><tr><td>46 - Bloc de foie gras 30% Mcx 200g</td><td class="muted">VI - Le canard en conserve</td><td class="r">12,10 € HT</td><td>à la pièce</td><td>—</td><td><button class="btn small ghost" data-act="edit" data-id="57">✏️</button> <button class="btn danger" data-act="del" data-id="57">🗑</button></td></tr><tr><td>47 - Rillettes pur canard 200g</td><td class="muted">VI - Le canard en conserve</td><td class="r">4,70 € HT</td><td>à la pièce</td><td>—</td><td><button class="btn small ghost" data-act="edit" data-id="58">✏️</button> <button class="btn danger" data-act="del" data-id="58">🗑</button></td></tr><tr><td>48 - Terrine de canard à l'Armagnac 200g</td><td class="muted">VI - Le canard en conserve</td><td class="r">4,70 € HT</td><td>à la pièce</td><td>—</td><td><button class="btn small ghost" data-act="edit" data-id="59">✏️</button> <button class="btn danger" data-act="del" data-id="59">🗑</button></td></tr><tr><td>49 - Terrine de canard au poivre vert  200g</td><td class="muted">VI - Le canard en conserve</td><td class="r">4,70 € HT</td><td>à la pièce</td><td>—</td><td><button class="btn small ghost" data-act="edit" data-id="60">✏️</button> <button class="btn danger" data-act="del" data-id="60">🗑</button></td></tr><tr><td>50 - Terrine nature de canard 200g</td><td class="muted">VI - Le canard en conserve</td><td class="r">4,20 € HT</td><td>à la pièce</td><td>—</td><td><button class="btn small ghost" data-act="edit" data-id="61">✏️</button> <button class="btn danger" data-act="del" data-id="61">🗑</button></td></tr><tr><td>51 - Terrine au foie de canard (20%) 200g</td><td class="muted">VI - Le canard en conserve</td><td class="r">7,10 € HT</td><td>à la pièce</td><td>—</td><td><button class="btn small ghost" data-act="edit" data-id="62">✏️</button> <button class="btn danger" data-act="del" data-id="62">🗑</button></td></tr><tr><td>52 - Cou farci au foie gras 320g net eg</td><td class="muted">VI - Le canard en conserve</td><td class="r">12,80 € HT</td><td>à la pièce</td><td>—</td><td><button class="btn small ghost" data-act="edit" data-id="63">✏️</button> <button class="btn danger" data-act="del" data-id="63">🗑</button></td></tr><tr><td>53 - Magret fourré foie gras 320g net eg</td><td class="muted">VI - Le canard en conserve</td><td class="r">13,80 € HT</td><td>à la pièce</td><td>—</td><td><button class="btn small ghost" data-act="edit" data-id="64">✏️</button> <button class="btn danger" data-act="del" data-id="64">🗑</button></td></tr><tr><td>54 - Cuisses confites x2 360g net eg</td><td class="muted">VI - Le canard en conserve</td><td class="r">10,30 € HT</td><td>à la pièce</td><td>—</td><td><button class="btn small ghost" data-act="edit" data-id="65">✏️</button> <button class="btn danger" data-act="del" data-id="65">🗑</button></td></tr><tr><td>55 - Manchons confits x6 440g net eg</td><td class="muted">VI - Le canard en conserve</td><td class="r">9,40 € HT</td><td>à la pièce</td><td>—</td><td><button class="btn small ghost" data-act="edit" data-id="66">✏️</button> <button class="btn danger" data-act="del" data-id="66">🗑</button></td></tr><tr><td>56 - Graisse 320g</td><td class="muted">VI - Le canard en conserve</td><td class="r">3,10 € HT</td><td>à la pièce</td><td>—</td><td><button class="btn small ghost" data-act="edit" data-id="67">✏️</button> <button class="btn danger" data-act="del" data-id="67">🗑</button></td></tr><tr><td>57 - Gésiers confits 200g net eg</td><td class="muted">VI - Le canard en conserve</td><td class="r">8,70 € HT</td><td>à la pièce</td><td>—</td><td><button class="btn small ghost" data-act="edit" data-id="68">✏️</button> <button class="btn danger" data-act="del" data-id="68">🗑</button></td></tr></tbody>
+        </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Onglet outils -->
+    <div id="tab-outils" style="display: none;">
+      <div class="card">
+        <h2>Paramètres</h2>
+        <div class="grid2">
+          <div>
+            <label for="setTitle">Nom affiché (en-tête des documents)</label>
+            <input type="text" id="setTitle">
+          </div>
+          <div>
+            <label for="setEmail">Email du responsable (envoi des commandes)</label>
+            <input type="email" id="setEmail" placeholder="tytournel@baylesa.com">
+          </div>
+        </div>
+        <label style="display:flex;gap:10px;align-items:center;margin-top:14px;font-weight:600">
+          <input type="checkbox" id="setAuto" style="width:auto">
+          <span>Envoi automatique de chaque commande par email au responsable</span>
+        </label>
+        <p class="muted">Nécessite l'email ci-dessus. À la toute première commande, le service gratuit FormSubmit vous enverra un email d'activation à confirmer une seule fois. ⚠️ Les données de la commande (nom, téléphone, produits) transitent par ce service externe.</p>
+        <div class="btn-row"><button class="btn" id="btnSetSave">💾 Enregistrer les paramètres</button></div>
+      </div>
+
+      <div class="card">
+        <h2>📱 QR code d'accès au formulaire</h2>
+        <p class="muted">Une fois l'application hébergée, collez l'adresse web (URL) du formulaire puis générez le QR code à partager avec vos collègues.</p>
+        <label for="qrUrl">Adresse web du formulaire</label>
+        <input type="url" id="qrUrl" placeholder="https://…">
+        <div class="btn-row">
+          <button class="btn" id="btnQrGen">Générer le QR code</button>
+          <button class="btn ghost" id="btnQrPrint" style="display:none">🖨️ Imprimer la fiche QR</button>
+        </div>
+        <div style="margin-top:16px"><span class="qr-box" id="qrBox"></span></div>
+      </div>
+
+      <div class="card">
+        <h2>💾 Sauvegarde</h2>
+        <p class="muted">Exportez régulièrement une sauvegarde complète (commandes + tarifs + paramètres). Elle peut être réimportée ici, notamment lors d'un changement d'appareil.</p>
+        <div class="btn-row" style="margin-top:0">
+          <button class="btn ghost" id="btnBackup">⬇️ Sauvegarder (fichier)</button>
+          <button class="btn ghost" id="btnRestore">⬆️ Restaurer une sauvegarde</button>
+          <input type="file" id="restoreInput" accept=".json,application/json" style="display:none">
+        </div>
+        <p class="muted" style="margin-top:14px">ℹ️ Les commandes sont enregistrées dans le navigateur de l'appareil utilisé pour la saisie. Pour centraliser : utilisez un appareil partagé, ou collectez les commandes via le bouton « Envoyer par email » / « Télécharger » de la page de saisie, puis importez-les ici.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ============ FENÊTRE RÉCAP (ADMIN) ============ -->
+<div class="modal" id="orderModal" style="display:none">
+  <div class="modal-inner" id="orderModalInner"></div>
+</div>
+
+<footer style="display: block;"><a href="file:///C:/Users/tytournel/Downloads/application-de-saisie-de-commandes-bayle.html#responsable" id="toAdmin">Espace responsable ▸</a></footer>
+
+<!-- ============ ZONE D'IMPRESSION ============ -->
+<div id="printZone"></div>
+
+<div class="toast" id="toast">Produit ajouté.</div>
+
+<script>
+/*! qrcodejs — davidshimjs — licence MIT — via jsDelivr */
+var QRCode;!function(){function a(a){this.mode=c.MODE_8BIT_BYTE,this.data=a,this.parsedData=[];for(var b=[],d=0,e=this.data.length;e>d;d++){var f=this.data.charCodeAt(d);f>65536?(b[0]=240|(1835008&f)>>>18,b[1]=128|(258048&f)>>>12,b[2]=128|(4032&f)>>>6,b[3]=128|63&f):f>2048?(b[0]=224|(61440&f)>>>12,b[1]=128|(4032&f)>>>6,b[2]=128|63&f):f>128?(b[0]=192|(1984&f)>>>6,b[1]=128|63&f):b[0]=f,this.parsedData=this.parsedData.concat(b)}this.parsedData.length!=this.data.length&&(this.parsedData.unshift(191),this.parsedData.unshift(187),this.parsedData.unshift(239))}function b(a,b){this.typeNumber=a,this.errorCorrectLevel=b,this.modules=null,this.moduleCount=0,this.dataCache=null,this.dataList=[]}function i(a,b){if(void 0==a.length)throw new Error(a.length+"/"+b);for(var c=0;c<a.length&&0==a[c];)c++;this.num=new Array(a.length-c+b);for(var d=0;d<a.length-c;d++)this.num[d]=a[c+d]}function j(a,b){this.totalCount=a,this.dataCount=b}function k(){this.buffer=[],this.length=0}function m(){return"undefined"!=typeof CanvasRenderingContext2D}function n(){var a=!1,b=navigator.userAgent;return/android/i.test(b)&&(a=!0,aMat=b.toString().match(/android ([0-9]\.[0-9])/i),aMat&&aMat[1]&&(a=parseFloat(aMat[1]))),a}function r(a,b){for(var c=1,e=s(a),f=0,g=l.length;g>=f;f++){var h=0;switch(b){case d.L:h=l[f][0];break;case d.M:h=l[f][1];break;case d.Q:h=l[f][2];break;case d.H:h=l[f][3]}if(h>=e)break;c++}if(c>l.length)throw new Error("Too long data");return c}function s(a){var b=encodeURI(a).toString().replace(/\%[0-9a-fA-F]{2}/g,"a");return b.length+(b.length!=a?3:0)}a.prototype={getLength:function(){return this.parsedData.length},write:function(a){for(var b=0,c=this.parsedData.length;c>b;b++)a.put(this.parsedData[b],8)}},b.prototype={addData:function(b){var c=new a(b);this.dataList.push(c),this.dataCache=null},isDark:function(a,b){if(0>a||this.moduleCount<=a||0>b||this.moduleCount<=b)throw new Error(a+","+b);return this.modules[a][b]},getModuleCount:function(){return this.moduleCount},make:function(){this.makeImpl(!1,this.getBestMaskPattern())},makeImpl:function(a,c){this.moduleCount=4*this.typeNumber+17,this.modules=new Array(this.moduleCount);for(var d=0;d<this.moduleCount;d++){this.modules[d]=new Array(this.moduleCount);for(var e=0;e<this.moduleCount;e++)this.modules[d][e]=null}this.setupPositionProbePattern(0,0),this.setupPositionProbePattern(this.moduleCount-7,0),this.setupPositionProbePattern(0,this.moduleCount-7),this.setupPositionAdjustPattern(),this.setupTimingPattern(),this.setupTypeInfo(a,c),this.typeNumber>=7&&this.setupTypeNumber(a),null==this.dataCache&&(this.dataCache=b.createData(this.typeNumber,this.errorCorrectLevel,this.dataList)),this.mapData(this.dataCache,c)},setupPositionProbePattern:function(a,b){for(var c=-1;7>=c;c++)if(!(-1>=a+c||this.moduleCount<=a+c))for(var d=-1;7>=d;d++)-1>=b+d||this.moduleCount<=b+d||(this.modules[a+c][b+d]=c>=0&&6>=c&&(0==d||6==d)||d>=0&&6>=d&&(0==c||6==c)||c>=2&&4>=c&&d>=2&&4>=d?!0:!1)},getBestMaskPattern:function(){for(var a=0,b=0,c=0;8>c;c++){this.makeImpl(!0,c);var d=f.getLostPoint(this);(0==c||a>d)&&(a=d,b=c)}return b},createMovieClip:function(a,b,c){var d=a.createEmptyMovieClip(b,c),e=1;this.make();for(var f=0;f<this.modules.length;f++)for(var g=f*e,h=0;h<this.modules[f].length;h++){var i=h*e,j=this.modules[f][h];j&&(d.beginFill(0,100),d.moveTo(i,g),d.lineTo(i+e,g),d.lineTo(i+e,g+e),d.lineTo(i,g+e),d.endFill())}return d},setupTimingPattern:function(){for(var a=8;a<this.moduleCount-8;a++)null==this.modules[a][6]&&(this.modules[a][6]=0==a%2);for(var b=8;b<this.moduleCount-8;b++)null==this.modules[6][b]&&(this.modules[6][b]=0==b%2)},setupPositionAdjustPattern:function(){for(var a=f.getPatternPosition(this.typeNumber),b=0;b<a.length;b++)for(var c=0;c<a.length;c++){var d=a[b],e=a[c];if(null==this.modules[d][e])for(var g=-2;2>=g;g++)for(var h=-2;2>=h;h++)this.modules[d+g][e+h]=-2==g||2==g||-2==h||2==h||0==g&&0==h?!0:!1}},setupTypeNumber:function(a){for(var b=f.getBCHTypeNumber(this.typeNumber),c=0;18>c;c++){var d=!a&&1==(1&b>>c);this.modules[Math.floor(c/3)][c%3+this.moduleCount-8-3]=d}for(var c=0;18>c;c++){var d=!a&&1==(1&b>>c);this.modules[c%3+this.moduleCount-8-3][Math.floor(c/3)]=d}},setupTypeInfo:function(a,b){for(var c=this.errorCorrectLevel<<3|b,d=f.getBCHTypeInfo(c),e=0;15>e;e++){var g=!a&&1==(1&d>>e);6>e?this.modules[e][8]=g:8>e?this.modules[e+1][8]=g:this.modules[this.moduleCount-15+e][8]=g}for(var e=0;15>e;e++){var g=!a&&1==(1&d>>e);8>e?this.modules[8][this.moduleCount-e-1]=g:9>e?this.modules[8][15-e-1+1]=g:this.modules[8][15-e-1]=g}this.modules[this.moduleCount-8][8]=!a},mapData:function(a,b){for(var c=-1,d=this.moduleCount-1,e=7,g=0,h=this.moduleCount-1;h>0;h-=2)for(6==h&&h--;;){for(var i=0;2>i;i++)if(null==this.modules[d][h-i]){var j=!1;g<a.length&&(j=1==(1&a[g]>>>e));var k=f.getMask(b,d,h-i);k&&(j=!j),this.modules[d][h-i]=j,e--,-1==e&&(g++,e=7)}if(d+=c,0>d||this.moduleCount<=d){d-=c,c=-c;break}}}},b.PAD0=236,b.PAD1=17,b.createData=function(a,c,d){for(var e=j.getRSBlocks(a,c),g=new k,h=0;h<d.length;h++){var i=d[h];g.put(i.mode,4),g.put(i.getLength(),f.getLengthInBits(i.mode,a)),i.write(g)}for(var l=0,h=0;h<e.length;h++)l+=e[h].dataCount;if(g.getLengthInBits()>8*l)throw new Error("code length overflow. ("+g.getLengthInBits()+">"+8*l+")");for(g.getLengthInBits()+4<=8*l&&g.put(0,4);0!=g.getLengthInBits()%8;)g.putBit(!1);for(;;){if(g.getLengthInBits()>=8*l)break;if(g.put(b.PAD0,8),g.getLengthInBits()>=8*l)break;g.put(b.PAD1,8)}return b.createBytes(g,e)},b.createBytes=function(a,b){for(var c=0,d=0,e=0,g=new Array(b.length),h=new Array(b.length),j=0;j<b.length;j++){var k=b[j].dataCount,l=b[j].totalCount-k;d=Math.max(d,k),e=Math.max(e,l),g[j]=new Array(k);for(var m=0;m<g[j].length;m++)g[j][m]=255&a.buffer[m+c];c+=k;var n=f.getErrorCorrectPolynomial(l),o=new i(g[j],n.getLength()-1),p=o.mod(n);h[j]=new Array(n.getLength()-1);for(var m=0;m<h[j].length;m++){var q=m+p.getLength()-h[j].length;h[j][m]=q>=0?p.get(q):0}}for(var r=0,m=0;m<b.length;m++)r+=b[m].totalCount;for(var s=new Array(r),t=0,m=0;d>m;m++)for(var j=0;j<b.length;j++)m<g[j].length&&(s[t++]=g[j][m]);for(var m=0;e>m;m++)for(var j=0;j<b.length;j++)m<h[j].length&&(s[t++]=h[j][m]);return s};for(var c={MODE_NUMBER:1,MODE_ALPHA_NUM:2,MODE_8BIT_BYTE:4,MODE_KANJI:8},d={L:1,M:0,Q:3,H:2},e={PATTERN000:0,PATTERN001:1,PATTERN010:2,PATTERN011:3,PATTERN100:4,PATTERN101:5,PATTERN110:6,PATTERN111:7},f={PATTERN_POSITION_TABLE:[[],[6,18],[6,22],[6,26],[6,30],[6,34],[6,22,38],[6,24,42],[6,26,46],[6,28,50],[6,30,54],[6,32,58],[6,34,62],[6,26,46,66],[6,26,48,70],[6,26,50,74],[6,30,54,78],[6,30,56,82],[6,30,58,86],[6,34,62,90],[6,28,50,72,94],[6,26,50,74,98],[6,30,54,78,102],[6,28,54,80,106],[6,32,58,84,110],[6,30,58,86,114],[6,34,62,90,118],[6,26,50,74,98,122],[6,30,54,78,102,126],[6,26,52,78,104,130],[6,30,56,82,108,134],[6,34,60,86,112,138],[6,30,58,86,114,142],[6,34,62,90,118,146],[6,30,54,78,102,126,150],[6,24,50,76,102,128,154],[6,28,54,80,106,132,158],[6,32,58,84,110,136,162],[6,26,54,82,110,138,166],[6,30,58,86,114,142,170]],G15:1335,G18:7973,G15_MASK:21522,getBCHTypeInfo:function(a){for(var b=a<<10;f.getBCHDigit(b)-f.getBCHDigit(f.G15)>=0;)b^=f.G15<<f.getBCHDigit(b)-f.getBCHDigit(f.G15);return(a<<10|b)^f.G15_MASK},getBCHTypeNumber:function(a){for(var b=a<<12;f.getBCHDigit(b)-f.getBCHDigit(f.G18)>=0;)b^=f.G18<<f.getBCHDigit(b)-f.getBCHDigit(f.G18);return a<<12|b},getBCHDigit:function(a){for(var b=0;0!=a;)b++,a>>>=1;return b},getPatternPosition:function(a){return f.PATTERN_POSITION_TABLE[a-1]},getMask:function(a,b,c){switch(a){case e.PATTERN000:return 0==(b+c)%2;case e.PATTERN001:return 0==b%2;case e.PATTERN010:return 0==c%3;case e.PATTERN011:return 0==(b+c)%3;case e.PATTERN100:return 0==(Math.floor(b/2)+Math.floor(c/3))%2;case e.PATTERN101:return 0==b*c%2+b*c%3;case e.PATTERN110:return 0==(b*c%2+b*c%3)%2;case e.PATTERN111:return 0==(b*c%3+(b+c)%2)%2;default:throw new Error("bad maskPattern:"+a)}},getErrorCorrectPolynomial:function(a){for(var b=new i([1],0),c=0;a>c;c++)b=b.multiply(new i([1,g.gexp(c)],0));return b},getLengthInBits:function(a,b){if(b>=1&&10>b)switch(a){case c.MODE_NUMBER:return 10;case c.MODE_ALPHA_NUM:return 9;case c.MODE_8BIT_BYTE:return 8;case c.MODE_KANJI:return 8;default:throw new Error("mode:"+a)}else if(27>b)switch(a){case c.MODE_NUMBER:return 12;case c.MODE_ALPHA_NUM:return 11;case c.MODE_8BIT_BYTE:return 16;case c.MODE_KANJI:return 10;default:throw new Error("mode:"+a)}else{if(!(41>b))throw new Error("type:"+b);switch(a){case c.MODE_NUMBER:return 14;case c.MODE_ALPHA_NUM:return 13;case c.MODE_8BIT_BYTE:return 16;case c.MODE_KANJI:return 12;default:throw new Error("mode:"+a)}}},getLostPoint:function(a){for(var b=a.getModuleCount(),c=0,d=0;b>d;d++)for(var e=0;b>e;e++){for(var f=0,g=a.isDark(d,e),h=-1;1>=h;h++)if(!(0>d+h||d+h>=b))for(var i=-1;1>=i;i++)0>e+i||e+i>=b||(0!=h||0!=i)&&g==a.isDark(d+h,e+i)&&f++;f>5&&(c+=3+f-5)}for(var d=0;b-1>d;d++)for(var e=0;b-1>e;e++){var j=0;a.isDark(d,e)&&j++,a.isDark(d+1,e)&&j++,a.isDark(d,e+1)&&j++,a.isDark(d+1,e+1)&&j++,(0==j||4==j)&&(c+=3)}for(var d=0;b>d;d++)for(var e=0;b-6>e;e++)a.isDark(d,e)&&!a.isDark(d,e+1)&&a.isDark(d,e+2)&&a.isDark(d,e+3)&&a.isDark(d,e+4)&&!a.isDark(d,e+5)&&a.isDark(d,e+6)&&(c+=40);for(var e=0;b>e;e++)for(var d=0;b-6>d;d++)a.isDark(d,e)&&!a.isDark(d+1,e)&&a.isDark(d+2,e)&&a.isDark(d+3,e)&&a.isDark(d+4,e)&&!a.isDark(d+5,e)&&a.isDark(d+6,e)&&(c+=40);for(var k=0,e=0;b>e;e++)for(var d=0;b>d;d++)a.isDark(d,e)&&k++;var l=Math.abs(100*k/b/b-50)/5;return c+=10*l}},g={glog:function(a){if(1>a)throw new Error("glog("+a+")");return g.LOG_TABLE[a]},gexp:function(a){for(;0>a;)a+=255;for(;a>=256;)a-=255;return g.EXP_TABLE[a]},EXP_TABLE:new Array(256),LOG_TABLE:new Array(256)},h=0;8>h;h++)g.EXP_TABLE[h]=1<<h;for(var h=8;256>h;h++)g.EXP_TABLE[h]=g.EXP_TABLE[h-4]^g.EXP_TABLE[h-5]^g.EXP_TABLE[h-6]^g.EXP_TABLE[h-8];for(var h=0;255>h;h++)g.LOG_TABLE[g.EXP_TABLE[h]]=h;i.prototype={get:function(a){return this.num[a]},getLength:function(){return this.num.length},multiply:function(a){for(var b=new Array(this.getLength()+a.getLength()-1),c=0;c<this.getLength();c++)for(var d=0;d<a.getLength();d++)b[c+d]^=g.gexp(g.glog(this.get(c))+g.glog(a.get(d)));return new i(b,0)},mod:function(a){if(this.getLength()-a.getLength()<0)return this;for(var b=g.glog(this.get(0))-g.glog(a.get(0)),c=new Array(this.getLength()),d=0;d<this.getLength();d++)c[d]=this.get(d);for(var d=0;d<a.getLength();d++)c[d]^=g.gexp(g.glog(a.get(d))+b);return new i(c,0).mod(a)}},j.RS_BLOCK_TABLE=[[1,26,19],[1,26,16],[1,26,13],[1,26,9],[1,44,34],[1,44,28],[1,44,22],[1,44,16],[1,70,55],[1,70,44],[2,35,17],[2,35,13],[1,100,80],[2,50,32],[2,50,24],[4,25,9],[1,134,108],[2,67,43],[2,33,15,2,34,16],[2,33,11,2,34,12],[2,86,68],[4,43,27],[4,43,19],[4,43,15],[2,98,78],[4,49,31],[2,32,14,4,33,15],[4,39,13,1,40,14],[2,121,97],[2,60,38,2,61,39],[4,40,18,2,41,19],[4,40,14,2,41,15],[2,146,116],[3,58,36,2,59,37],[4,36,16,4,37,17],[4,36,12,4,37,13],[2,86,68,2,87,69],[4,69,43,1,70,44],[6,43,19,2,44,20],[6,43,15,2,44,16],[4,101,81],[1,80,50,4,81,51],[4,50,22,4,51,23],[3,36,12,8,37,13],[2,116,92,2,117,93],[6,58,36,2,59,37],[4,46,20,6,47,21],[7,42,14,4,43,15],[4,133,107],[8,59,37,1,60,38],[8,44,20,4,45,21],[12,33,11,4,34,12],[3,145,115,1,146,116],[4,64,40,5,65,41],[11,36,16,5,37,17],[11,36,12,5,37,13],[5,109,87,1,110,88],[5,65,41,5,66,42],[5,54,24,7,55,25],[11,36,12],[5,122,98,1,123,99],[7,73,45,3,74,46],[15,43,19,2,44,20],[3,45,15,13,46,16],[1,135,107,5,136,108],[10,74,46,1,75,47],[1,50,22,15,51,23],[2,42,14,17,43,15],[5,150,120,1,151,121],[9,69,43,4,70,44],[17,50,22,1,51,23],[2,42,14,19,43,15],[3,141,113,4,142,114],[3,70,44,11,71,45],[17,47,21,4,48,22],[9,39,13,16,40,14],[3,135,107,5,136,108],[3,67,41,13,68,42],[15,54,24,5,55,25],[15,43,15,10,44,16],[4,144,116,4,145,117],[17,68,42],[17,50,22,6,51,23],[19,46,16,6,47,17],[2,139,111,7,140,112],[17,74,46],[7,54,24,16,55,25],[34,37,13],[4,151,121,5,152,122],[4,75,47,14,76,48],[11,54,24,14,55,25],[16,45,15,14,46,16],[6,147,117,4,148,118],[6,73,45,14,74,46],[11,54,24,16,55,25],[30,46,16,2,47,17],[8,132,106,4,133,107],[8,75,47,13,76,48],[7,54,24,22,55,25],[22,45,15,13,46,16],[10,142,114,2,143,115],[19,74,46,4,75,47],[28,50,22,6,51,23],[33,46,16,4,47,17],[8,152,122,4,153,123],[22,73,45,3,74,46],[8,53,23,26,54,24],[12,45,15,28,46,16],[3,147,117,10,148,118],[3,73,45,23,74,46],[4,54,24,31,55,25],[11,45,15,31,46,16],[7,146,116,7,147,117],[21,73,45,7,74,46],[1,53,23,37,54,24],[19,45,15,26,46,16],[5,145,115,10,146,116],[19,75,47,10,76,48],[15,54,24,25,55,25],[23,45,15,25,46,16],[13,145,115,3,146,116],[2,74,46,29,75,47],[42,54,24,1,55,25],[23,45,15,28,46,16],[17,145,115],[10,74,46,23,75,47],[10,54,24,35,55,25],[19,45,15,35,46,16],[17,145,115,1,146,116],[14,74,46,21,75,47],[29,54,24,19,55,25],[11,45,15,46,46,16],[13,145,115,6,146,116],[14,74,46,23,75,47],[44,54,24,7,55,25],[59,46,16,1,47,17],[12,151,121,7,152,122],[12,75,47,26,76,48],[39,54,24,14,55,25],[22,45,15,41,46,16],[6,151,121,14,152,122],[6,75,47,34,76,48],[46,54,24,10,55,25],[2,45,15,64,46,16],[17,152,122,4,153,123],[29,74,46,14,75,47],[49,54,24,10,55,25],[24,45,15,46,46,16],[4,152,122,18,153,123],[13,74,46,32,75,47],[48,54,24,14,55,25],[42,45,15,32,46,16],[20,147,117,4,148,118],[40,75,47,7,76,48],[43,54,24,22,55,25],[10,45,15,67,46,16],[19,148,118,6,149,119],[18,75,47,31,76,48],[34,54,24,34,55,25],[20,45,15,61,46,16]],j.getRSBlocks=function(a,b){var c=j.getRsBlockTable(a,b);if(void 0==c)throw new Error("bad rs block @ typeNumber:"+a+"/errorCorrectLevel:"+b);for(var d=c.length/3,e=[],f=0;d>f;f++)for(var g=c[3*f+0],h=c[3*f+1],i=c[3*f+2],k=0;g>k;k++)e.push(new j(h,i));return e},j.getRsBlockTable=function(a,b){switch(b){case d.L:return j.RS_BLOCK_TABLE[4*(a-1)+0];case d.M:return j.RS_BLOCK_TABLE[4*(a-1)+1];case d.Q:return j.RS_BLOCK_TABLE[4*(a-1)+2];case d.H:return j.RS_BLOCK_TABLE[4*(a-1)+3];default:return void 0}},k.prototype={get:function(a){var b=Math.floor(a/8);return 1==(1&this.buffer[b]>>>7-a%8)},put:function(a,b){for(var c=0;b>c;c++)this.putBit(1==(1&a>>>b-c-1))},getLengthInBits:function(){return this.length},putBit:function(a){var b=Math.floor(this.length/8);this.buffer.length<=b&&this.buffer.push(0),a&&(this.buffer[b]|=128>>>this.length%8),this.length++}};var l=[[17,14,11,7],[32,26,20,14],[53,42,32,24],[78,62,46,34],[106,84,60,44],[134,106,74,58],[154,122,86,64],[192,152,108,84],[230,180,130,98],[271,213,151,119],[321,251,177,137],[367,287,203,155],[425,331,241,177],[458,362,258,194],[520,412,292,220],[586,450,322,250],[644,504,364,280],[718,560,394,310],[792,624,442,338],[858,666,482,382],[929,711,509,403],[1003,779,565,439],[1091,857,611,461],[1171,911,661,511],[1273,997,715,535],[1367,1059,751,593],[1465,1125,805,625],[1528,1190,868,658],[1628,1264,908,698],[1732,1370,982,742],[1840,1452,1030,790],[1952,1538,1112,842],[2068,1628,1168,898],[2188,1722,1228,958],[2303,1809,1283,983],[2431,1911,1351,1051],[2563,1989,1423,1093],[2699,2099,1499,1139],[2809,2213,1579,1219],[2953,2331,1663,1273]],o=function(){var a=function(a,b){this._el=a,this._htOption=b};return a.prototype.draw=function(a){function g(a,b){var c=document.createElementNS("http://www.w3.org/2000/svg",a);for(var d in b)b.hasOwnProperty(d)&&c.setAttribute(d,b[d]);return c}var b=this._htOption,c=this._el,d=a.getModuleCount();Math.floor(b.width/d),Math.floor(b.height/d),this.clear();var h=g("svg",{viewBox:"0 0 "+String(d)+" "+String(d),width:"100%",height:"100%",fill:b.colorLight});h.setAttributeNS("http://www.w3.org/2000/xmlns/","xmlns:xlink","http://www.w3.org/1999/xlink"),c.appendChild(h),h.appendChild(g("rect",{fill:b.colorDark,width:"1",height:"1",id:"template"}));for(var i=0;d>i;i++)for(var j=0;d>j;j++)if(a.isDark(i,j)){var k=g("use",{x:String(i),y:String(j)});k.setAttributeNS("http://www.w3.org/1999/xlink","href","#template"),h.appendChild(k)}},a.prototype.clear=function(){for(;this._el.hasChildNodes();)this._el.removeChild(this._el.lastChild)},a}(),p="svg"===document.documentElement.tagName.toLowerCase(),q=p?o:m()?function(){function a(){this._elImage.src=this._elCanvas.toDataURL("image/png"),this._elImage.style.display="block",this._elCanvas.style.display="none"}function d(a,b){var c=this;if(c._fFail=b,c._fSuccess=a,null===c._bSupportDataURI){var d=document.createElement("img"),e=function(){c._bSupportDataURI=!1,c._fFail&&_fFail.call(c)},f=function(){c._bSupportDataURI=!0,c._fSuccess&&_fSuccess.call(c)};return d.onabort=e,d.onerror=e,d.onload=f,d.src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==",void 0}c._bSupportDataURI===!0&&c._fSuccess?c._fSuccess.call(c):c._bSupportDataURI===!1&&c._fFail&&c._fFail.call(c)}if(this._android&&this._android<=2.1){var b=1/window.devicePixelRatio,c=CanvasRenderingContext2D.prototype.drawImage;CanvasRenderingContext2D.prototype.drawImage=function(a,d,e,f,g,h,i,j){if("nodeName"in a&&/img/i.test(a.nodeName))for(var l=arguments.length-1;l>=1;l--)arguments[l]=arguments[l]*b;else"undefined"==typeof j&&(arguments[1]*=b,arguments[2]*=b,arguments[3]*=b,arguments[4]*=b);c.apply(this,arguments)}}var e=function(a,b){this._bIsPainted=!1,this._android=n(),this._htOption=b,this._elCanvas=document.createElement("canvas"),this._elCanvas.width=b.width,this._elCanvas.height=b.height,a.appendChild(this._elCanvas),this._el=a,this._oContext=this._elCanvas.getContext("2d"),this._bIsPainted=!1,this._elImage=document.createElement("img"),this._elImage.style.display="none",this._el.appendChild(this._elImage),this._bSupportDataURI=null};return e.prototype.draw=function(a){var b=this._elImage,c=this._oContext,d=this._htOption,e=a.getModuleCount(),f=d.width/e,g=d.height/e,h=Math.round(f),i=Math.round(g);b.style.display="none",this.clear();for(var j=0;e>j;j++)for(var k=0;e>k;k++){var l=a.isDark(j,k),m=k*f,n=j*g;c.strokeStyle=l?d.colorDark:d.colorLight,c.lineWidth=1,c.fillStyle=l?d.colorDark:d.colorLight,c.fillRect(m,n,f,g),c.strokeRect(Math.floor(m)+.5,Math.floor(n)+.5,h,i),c.strokeRect(Math.ceil(m)-.5,Math.ceil(n)-.5,h,i)}this._bIsPainted=!0},e.prototype.makeImage=function(){this._bIsPainted&&d.call(this,a)},e.prototype.isPainted=function(){return this._bIsPainted},e.prototype.clear=function(){this._oContext.clearRect(0,0,this._elCanvas.width,this._elCanvas.height),this._bIsPainted=!1},e.prototype.round=function(a){return a?Math.floor(1e3*a)/1e3:a},e}():function(){var a=function(a,b){this._el=a,this._htOption=b};return a.prototype.draw=function(a){for(var b=this._htOption,c=this._el,d=a.getModuleCount(),e=Math.floor(b.width/d),f=Math.floor(b.height/d),g=['<table style="border:0;border-collapse:collapse;">'],h=0;d>h;h++){g.push("<tr>");for(var i=0;d>i;i++)g.push('<td style="border:0;border-collapse:collapse;padding:0;margin:0;width:'+e+"px;height:"+f+"px;background-color:"+(a.isDark(h,i)?b.colorDark:b.colorLight)+';"></td>');g.push("</tr>")}g.push("</table>"),c.innerHTML=g.join("");var j=c.childNodes[0],k=(b.width-j.offsetWidth)/2,l=(b.height-j.offsetHeight)/2;k>0&&l>0&&(j.style.margin=l+"px "+k+"px")},a.prototype.clear=function(){this._el.innerHTML=""},a}();QRCode=function(a,b){if(this._htOption={width:256,height:256,typeNumber:4,colorDark:"#000000",colorLight:"#ffffff",correctLevel:d.H},"string"==typeof b&&(b={text:b}),b)for(var c in b)this._htOption[c]=b[c];"string"==typeof a&&(a=document.getElementById(a)),this._android=n(),this._el=a,this._oQRCode=null,this._oDrawing=new q(this._el,this._htOption),this._htOption.text&&this.makeCode(this._htOption.text)},QRCode.prototype.makeCode=function(a){this._oQRCode=new b(r(a,this._htOption.correctLevel),this._htOption.correctLevel),this._oQRCode.addData(a),this._oQRCode.make(),this._el.title=a,this._oDrawing.draw(this._oQRCode),this.makeImage()},QRCode.prototype.makeImage=function(){"function"==typeof this._oDrawing.makeImage&&(!this._android||this._android>=3)&&this._oDrawing.makeImage()},QRCode.prototype.clear=function(){this._oDrawing.clear()},QRCode.CorrectLevel=d}();
+</script>
+
+<script>
+(function(){
+"use strict";
+
+/* ---------- Stockage ---------- */
+var storageOK = true;
+try { localStorage.setItem("__t","1"); localStorage.removeItem("__t"); } catch(e){ storageOK = false; }
+var mem = {};
+function lsGet(k, def){
+  if(!storageOK) return (k in mem) ? mem[k] : def;
+  try { var v = localStorage.getItem(k); return v === null ? def : JSON.parse(v); } catch(e){ return def; }
+}
+function lsSet(k, v){
+  if(!storageOK){ mem[k] = v; return; }
+  try { localStorage.setItem(k, JSON.stringify(v)); } catch(e){}
+}
+var K_T = "cmd_tarifs", K_O = "cmd_orders", K_C = "cmd_counter", K_S = "cmd_settings";
+
+var settings = lsGet(K_S, { titre: "BAYLE", email: "tytournel@baylesa.com" });
+if (!settings || typeof settings !== "object") settings = { titre: "BAYLE", email: "tytournel@baylesa.com" };
+if (!settings.titre) settings.titre = "BAYLE";
+if (!settings.email) settings.email = "tytournel@baylesa.com";
+if (typeof settings.autoEmail !== "boolean") settings.autoEmail = false;
+
+var tarifs = lsGet(K_T, null);
+if (!Array.isArray(tarifs)) {
+  tarifs = [
+    { id: 1,  nom: "Foie gras extra > 650 g",              pu: 47.10, unite: "kg", cat: "Foie gras" },
+    { id: 2,  nom: "Foie gras extra dessous < 650 g",      pu: 50.30, unite: "kg", cat: "Foie gras" },
+    { id: 3,  nom: "Magret > 420 g",                        pu: 14.90, unite: "kg", cat: "Magrets" },
+    { id: 4,  nom: "Aiguillettes en poche s/v < 550 g",     pu: 17.90, unite: "kg", cat: "Magrets" },
+    { id: 5,  nom: "Tournedos de magret s/v x2 < 550 g",    pu: 23.70, unite: "kg", cat: "Magrets" },
+    { id: 6,  nom: "Cuisse à confire",                     pu: 6.40,  unite: "kg", cat: "Cuisses & manchons" },
+    { id: 7,  nom: "Cuisse à rôti",                        pu: 7.60,  unite: "kg", cat: "Cuisses & manchons" },
+    { id: 8,  nom: "Manchons",                             pu: 3.90,  unite: "kg", cat: "Cuisses & manchons" },
+    { id: 9,  nom: "Canard gras entier sans le foie < 2,5 kg", pu: 6.60, unite: "kg", cat: "Canard entier & abats" },
+    { id: 10, nom: "Cœur en poche < 350 g",                 pu: 5.00,  unite: "kg", cat: "Canard entier & abats" },
+    { id: 11, nom: "Carcasse",                             pu: 1.00,  unite: "kg", cat: "Canard entier & abats" }
+  ];
+  lsSet(K_T, tarifs);
+}
+
+/* Catégories : attribution par défaut + migration des anciens tarifs sans catégorie */
+var DEFAULT_CATS = {
+  "1": "Foie gras", "2": "Foie gras",
+  "3": "Magrets", "4": "Magrets", "5": "Magrets",
+  "6": "Cuisses & manchons", "7": "Cuisses & manchons", "8": "Cuisses & manchons",
+  "9": "Canard entier & abats", "10": "Canard entier & abats", "11": "Canard entier & abats"
+};
+function migrateTarifs(){
+  var changed = false;
+  tarifs.forEach(function(t){
+    if (!t || typeof t !== "object") return;
+    if (typeof t.cat !== "string" || !t.cat){
+      t.cat = DEFAULT_CATS[String(t.id)] || "Divers";
+      changed = true;
+    }
+  });
+  if (changed) lsSet(K_T, tarifs);
+}
+migrateTarifs();
+
+var orders = lsGet(K_O, []);
+if (!Array.isArray(orders)) orders = [];
+var counter = parseInt(lsGet(K_C, 0), 10) || 0;
+var tarifIdMax = tarifs.reduce(function(m, t){ return Math.max(m, t.id || 0); }, 0);
+
+function normalizeCounter(){
+  var maxNum = 0;
+  orders.forEach(function(o){
+    var m = /^(\d+)$/.exec(String(o.num || "").replace(/^CMD-?/i, ""));
+    if (m) maxNum = Math.max(maxNum, parseInt(m[1], 10));
+  });
+  if (counter < maxNum) { counter = maxNum; lsSet(K_C, counter); }
+}
+
+/* ---------- Utilitaires ---------- */
+function $(id){ return document.getElementById(id); }
+function esc(s){
+  return String(s == null ? "" : s).replace(/[&<>"']/g, function(c){
+    return { "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[c];
+  });
+}
+var fmtE;
+try { fmtE = new Intl.NumberFormat("fr-FR", { style: "currency", currency: "EUR" }); } catch(e){}
+function euro(x){
+  if (fmtE) { try { return fmtE.format(x) + " HT"; } catch(e){} }
+  return x.toFixed(2).replace(".", ",") + " € HT";
+}
+function numToFr(x){
+  if (x === Math.round(x)) return String(x);
+  return String(x).replace(".", ",");
+}
+function fmtQ(l){
+  if (l.unite === "kg" && l.poids){
+    return numToFr(l.qte) + (l.qte > 1 ? " pièces" : " pièce") +
+      " (~" + numToFr(Math.round(l.poids * l.qte * 1000) / 1000) + " kg)";
+  }
+  return numToFr(l.qte) + (l.unite === "kg" ? " kg" : (l.qte > 1 ? " pièces" : " pièce"));
+}
+function dateFR(iso){
+  var d = new Date(iso);
+  if (isNaN(d)) return String(iso);
+  try {
+    return d.toLocaleString("fr-FR", { day: "2-digit", month: "2-digit", year: "numeric", hour: "2-digit", minute: "2-digit" });
+  } catch(e){ return d.toLocaleString(); }
+}
+function toast(msg){
+  var t = $("toast");
+  t.textContent = msg;
+  t.classList.add("show");
+  clearTimeout(t._h);
+  t._h = setTimeout(function(){ t.classList.remove("show"); }, 2600);
+}
+function parseQ(v){
+  var x = parseFloat(String(v).replace(",", "."));
+  return (isNaN(x) || x <= 0) ? 0 : x;
+}
+function download(filename, text, mime){
+  try {
+    var blob = new Blob([text], { type: mime || "application/octet-stream" });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement("a");
+    a.href = url; a.download = filename;
+    document.body.appendChild(a); a.click();
+    setTimeout(function(){ URL.revokeObjectURL(url); a.remove(); }, 400);
+  } catch(e){ toast("Téléchargement impossible dans ce contexte."); }
+}
+
+/* ---------- Impression ---------- */
+var printZone = $("printZone");
+function doPrint(html){
+  printZone.innerHTML = html;
+  document.body.classList.add("printing");
+  var done = false;
+  function cleanup(){
+    if (done) return; done = true;
+    document.body.classList.remove("printing");
+    printZone.innerHTML = "";
+  }
+  window.addEventListener("afterprint", cleanup, { once: true });
+  setTimeout(function(){
+    try { window.print(); } catch(e){ toast("Impression indisponible dans l'aperçu."); }
+    setTimeout(cleanup, 600);
+  }, 60);
+}
+
+/* ---------- Vues ---------- */
+function showView(which){
+  $("publicView").style.display = (which === "public") ? "block" : "none";
+  $("adminView").style.display  = (which === "admin")  ? "block" : "none";
+  var foot = document.querySelector("footer");
+  if (foot) foot.style.display = (which === "public") ? "block" : "none";
+}
+function syncHash(){
+  if (location.hash === "#responsable") showView("admin"); else showView("public");
+}
+window.addEventListener("hashchange", syncHash);
+$("toAdmin").addEventListener("click", function(){ location.hash = "responsable"; });
+$("btnBackPublic").addEventListener("click", function(){ location.hash = ""; showView("public"); });
+
+/* ---------- En-tête ---------- */
+$("appTitle").textContent = settings.titre;
+document.title = "Commandes — " + settings.titre;
+
+/* ---------- Formulaire de saisie ---------- */
+function renderCatalogue(){
+  var box = $("catalogue");
+  if (!tarifs.length){
+    box.innerHTML = "<p class='muted'>Aucun produit pour le moment. Ajoutez des tarifs dans l'espace responsable (onglet Tarifs).</p>";
+    return;
+  }
+  var groups = {};
+  tarifs.forEach(function(t){
+    var c = t.cat || "Divers";
+    (groups[c] = groups[c] || []).push(t);
+  });
+  var cats = Object.keys(groups).sort(function(a, b){ return a.localeCompare(b, "fr"); });
+  if (cats.indexOf("Divers") !== -1){
+    cats = cats.filter(function(c){ return c !== "Divers"; });
+    cats.push("Divers");
+  }
+  var h = "";
+  cats.forEach(function(c){
+    h += "<div class='cat-title'>" + esc(c) + "</div>";
+    h += groups[c].slice().sort(function(a, b){ return a.nom.localeCompare(b.nom, "fr"); }).map(function(t){
+      var isKg = t.unite === "kg";
+      var parPiece = isKg && t.poids > 0;
+      return "<div class='prod'>" +
+        "<div class='prod-info'><div class='prod-name'>" + esc(t.nom) + "</div>" +
+        "<div class='prod-price'>" + euro(t.pu) + " / " + (isKg ? "kg" : "pièce") +
+        (parPiece ? " · ~" + esc(numToFr(t.poids)) + " kg par pièce" : "") + "</div></div>" +
+        "<input class='qty' type='number' inputmode='decimal' data-id='" + t.id + "' " +
+        (parPiece || !isKg ? "step='1' min='1' placeholder='0'" : "step='0.01' min='0.01' placeholder='0,00'") + ">" +
+        "<span class='prod-unit'>" + (parPiece || !isKg ? "pièce(s)" : "kg") + "</span>" +
+        "</div>";
+    }).join("");
+  });
+  box.innerHTML = h;
+}
+$("catalogue").addEventListener("input", updateTotal);
+function collectLignes(){
+  var lignes = [];
+  var inputs = document.querySelectorAll("#catalogue .qty");
+  for (var i = 0; i < inputs.length; i++){
+    var q = parseQ(inputs[i].value);
+    if (q <= 0) continue;
+    var id = inputs[i].getAttribute("data-id");
+    var t = null;
+    for (var j = 0; j < tarifs.length; j++) if (String(tarifs[j].id) === String(id)) { t = tarifs[j]; break; }
+    if (!t) continue;
+    var poids = (t.unite === "kg" && t.poids > 0) ? t.poids : null;
+    var total = Math.round(t.pu * (poids ? q * poids : q) * 100) / 100;
+    lignes.push({ nom: t.nom, cat: t.cat || "", pu: t.pu, unite: t.unite, poids: poids, qte: q, total: total });
+  }
+  return lignes;
+}
+function updateTotal(){
+  var total = 0;
+  collectLignes().forEach(function(l){ total += l.total; });
+  $("totalLive").textContent = euro(Math.round(total * 100) / 100);
+}
+
+var phoneRe = /^(?:\+33\s?|0\s?)[1-9](?:[\s.-]*\d{2}){4}$/;
+function markField(fid, ok){
+  $(fid).className = ok ? "" : "field-invalid";
+  return ok;
+}
+$("btnSubmit").addEventListener("click", function(){
+  var nom = $("nom").value.trim();
+  var prenom = $("prenom").value.trim();
+  var tel = $("tel").value.trim();
+  var ok = true;
+  ok = markField("fNom", nom !== "") && ok;
+  ok = markField("fPrenom", prenom !== "") && ok;
+  ok = markField("fTel", phoneRe.test(tel)) && ok;
+  var lignes = collectLignes();
+  $("errNoProduct").style.display = lignes.length ? "none" : "block";
+  if (!ok || !lignes.length) { toast("Veuillez corriger les champs signalés."); return; }
+
+  counter += 1; lsSet(K_C, counter);
+  var order = {
+    num: "CMD-" + String(counter).padStart(4, "0"),
+    date: new Date().toISOString(),
+    nom: nom, prenom: prenom, tel: tel,
+    note: $("note").value.trim(),
+    lignes: lignes,
+    total: Math.round(lignes.reduce(function(s, l){ return s + l.total; }, 0) * 100) / 100
+  };
+  orders.push(order);
+  lsSet(K_O, orders);
+
+  renderResult(order);
+  maybeAutoEmail(order);
+  resetForm();
+  toast("Commande " + order.num + " enregistrée ✔");
+});
+
+var currentOrder = null;
+function renderResult(o){
+  currentOrder = o;
+  $("resNum").textContent = o.num;
+  $("resClient").textContent = "Le " + dateFR(o.date) + " — " + o.prenom + " " + o.nom + " — " + o.tel;
+  $("resLines").innerHTML = lignesTableHTML(o);
+  $("resTotal").textContent = euro(o.total);
+  var n = $("resNote");
+  if (o.note) { n.style.display = "block"; n.textContent = "Remarque : " + o.note; } else n.style.display = "none";
+  $("emailHint").textContent = settings.email
+    ? (settings.autoEmail
+        ? "📨 Chaque commande est envoyée automatiquement par email à : " + settings.email + " (service FormSubmit)."
+        : "Le bouton « Envoyer par email » ouvre votre messagerie avec la commande pré-remplie à destination de : " + settings.email + ". Activez l'envoi automatique dans l'espace responsable → Outils.")
+    : "Astuce : dans l'espace responsable → Outils, renseignez l'email du responsable pour activer l'envoi automatique des commandes.";
+  $("resultCard").style.display = "block";
+  $("resultCard").scrollIntoView({ behavior: "smooth" });
+}
+function resetForm(){
+  $("nom").value = ""; $("prenom").value = ""; $("tel").value = ""; $("note").value = "";
+  document.querySelectorAll("#catalogue .qty").forEach(function(i){ i.value = ""; });
+  updateTotal();
+}
+$("btnNewOrder").addEventListener("click", function(){
+  $("resultCard").style.display = "none";
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+function lignesTableHTML(o){
+  var h = "<table><thead><tr><th>Produit</th><th class='r'>Prix unitaire</th><th class='r'>Quantité</th><th class='r'>Total</th></tr></thead><tbody>";
+  o.lignes.forEach(function(l){
+    h += "<tr><td>" + esc(l.nom) + "</td><td class='r'>" + euro(l.pu) + " / " + esc(l.unite) + "</td>" +
+         "<td class='r'>" + esc(fmtQ(l)) + "</td><td class='r'>" + euro(l.total) + "</td></tr>";
+  });
+  h += "</tbody></table>";
+  return h;
+}
+
+/* ---------- Récapitulatif d'une commande ---------- */
+function recapHTML(o){
+  var h = "<h1>" + esc(settings.titre) + "</h1><h2>Récapitulatif de commande</h2>" +
+    "<p><b>N° " + esc(o.num) + "</b> — enregistrée le " + esc(dateFR(o.date)) + "</p>" +
+    "<p><b>" + esc(o.prenom) + " " + esc(o.nom) + "</b> — Tél. : " + esc(o.tel) + "</p>";
+  h += lignesTableHTML(o);
+  h += "<p style='text-align:right'><b>Total : " + euro(o.total) + "</b></p>";
+  if (o.note) h += "<p><i>Remarque : " + esc(o.note) + "</i></p>";
+  return h;
+}
+$("btnPrintRecap").addEventListener("click", function(){
+  if (currentOrder) doPrint(recapHTML(currentOrder));
+});
+function orderText(o){
+  var t = "Commande " + o.num + " — " + o.prenom + " " + o.nom + " — " + o.tel + "\n";
+  t += "Date : " + dateFR(o.date) + "\n\n";
+  o.lignes.forEach(function(l){
+    t += "- " + l.nom + " : " + fmtQ(l) + " × " + euro(l.pu) + " = " + euro(l.total) + "\n";
+  });
+  t += "\nTOTAL : " + euro(o.total) + "\n";
+  if (o.note) t += "Remarque : " + o.note + "\n";
+  return t;
+}
+/* Envoi automatique par email (service gratuit FormSubmit) */
+function maybeAutoEmail(o){
+  var st = $("mailStatus");
+  st.style.display = "none";
+  if (!settings.autoEmail || !settings.email) return;
+  st.style.display = "block";
+  st.textContent = "⏳ Envoi de l'email automatique au responsable…";
+  var produits = o.lignes.map(function(l){
+    return fmtQ(l) + " × " + l.nom + " (" + euro(l.pu) + "/" + l.unite + ") = " + euro(l.total);
+  }).join("\n");
+  fetch("https://formsubmit.co/ajax/" + encodeURIComponent(settings.email), {
+    method: "POST",
+    headers: { "Content-Type": "application/json", "Accept": "application/json" },
+    body: JSON.stringify({
+      _subject: "Commande " + o.num + " — " + o.prenom + " " + o.nom,
+      _template: "table",
+      "N° de commande": o.num,
+      "Date": dateFR(o.date),
+      "Nom": o.nom,
+      "Prénom": o.prenom,
+      "Téléphone": o.tel,
+      "Produits": produits,
+      "Total": euro(o.total),
+      "Remarque": o.note || "—"
+    })
+  }).then(function(res){
+    return res.json().catch(function(){ return {}; });
+  }).then(function(data){
+    if (data && (data.success === true || data.success === "true")) {
+      st.innerHTML = "✅ Commande envoyée automatiquement par email au responsable.";
+    } else if (data && data.message) {
+      st.innerHTML = "⚠️ " + esc(String(data.message));
+    } else {
+      st.innerHTML = "⚠️ Envoi automatique échoué. Utilisez le bouton « Envoyer par email » ci-dessus.";
+    }
+  }).catch(function(){
+    st.innerHTML = "⚠️ Envoi automatique indisponible ici (aperçu ou hors ligne). Utilisez le bouton « Envoyer par email » ci-dessus.";
+  });
+}
+
+$("btnMailRecap").addEventListener("click", function(){
+  if (!currentOrder) return;
+  var o = currentOrder;
+  var mailto = "mailto:" + encodeURIComponent(settings.email || "") +
+    "?subject=" + encodeURIComponent("Commande " + o.num + " — " + o.prenom + " " + o.nom) +
+    "&body=" + encodeURIComponent(orderText(o));
+  window.location.href = mailto;
+  toast("Ouverture de votre messagerie…");
+});
+$("btnDownloadOrder").addEventListener("click", function(){
+  if (!currentOrder) return;
+  download("commande_" + currentOrder.num + ".json",
+    JSON.stringify({ type: "commande", version: 1, order: currentOrder }, null, 2),
+    "application/json");
+  toast("Fichier téléchargé : donnez-le au responsable (bouton « Importer »).");
+});
+
+/* ---------- Espace responsable : onglets ---------- */
+document.querySelectorAll(".tab-btn").forEach(function(btn){
+  btn.addEventListener("click", function(){
+    document.querySelectorAll(".tab-btn").forEach(function(b){ b.classList.remove("active"); });
+    btn.classList.add("active");
+    ["commandes", "tarifs", "outils"].forEach(function(t){
+      $("tab-" + t).style.display = (btn.getAttribute("data-tab") === t) ? "block" : "none";
+    });
+  });
+});
+
+/* ---------- Commandes ---------- */
+function sortedOrders(){
+  return orders.slice().sort(function(a, b){ return String(a.num).localeCompare(String(b.num)); });
+}
+function renderOrders(){
+  var body = $("ordersBody");
+  var list = sortedOrders();
+  $("ordersEmpty").style.display = list.length ? "none" : "block";
+  var totalAll = 0;
+  body.innerHTML = list.map(function(o){
+    totalAll += o.total;
+    return "<tr>" +
+      "<td><b>" + esc(o.num) + "</b></td>" +
+      "<td>" + esc(dateFR(o.date)) + "</td>" +
+      "<td>" + esc(o.prenom + " " + o.nom) + "</td>" +
+      "<td>" + esc(o.tel) + "</td>" +
+      "<td class='r'>" + euro(o.total) + "</td>" +
+      "<td><button class='btn small ghost' data-act='view' data-num='" + esc(o.num) + "'>📋 Récap</button> " +
+      "<button class='btn danger' data-act='del' data-num='" + esc(o.num) + "'>🗑</button></td>" +
+      "</tr>";
+  }).join("");
+  $("stats").innerHTML =
+    "<div class='stat'>Commandes<b>" + list.length + "</b></div>" +
+    "<div class='stat'>Chiffre d'affaires<b>" + euro(Math.round(totalAll * 100) / 100) + "</b></div>";
+}
+$("ordersBody").addEventListener("click", function(ev){
+  var b = ev.target.closest("button[data-act]");
+  if (!b) return;
+  var num = b.getAttribute("data-num");
+  var o = null;
+  for (var i = 0; i < orders.length; i++) if (orders[i].num === num) { o = orders[i]; break; }
+  if (!o) return;
+  if (b.getAttribute("data-act") === "del"){
+    if (!confirm("Supprimer définitivement la commande " + num + " ?")) return;
+    orders = orders.filter(function(x){ return x.num !== num; });
+    lsSet(K_O, orders);
+    renderOrders();
+    toast("Commande " + num + " supprimée.");
+  } else {
+    openOrderModal(o);
+  }
+});
+
+function openOrderModal(o){
+  var m = $("orderModal");
+  $("orderModalInner").innerHTML =
+    "<h2 style='margin-top:0'>Commande <span class='num-badge'>" + esc(o.num) + "</span></h2>" +
+    "<p class='muted'>" + esc(dateFR(o.date)) + " — <b>" + esc(o.prenom + " " + o.nom) + "</b> — " + esc(o.tel) + "</p>" +
+    lignesTableHTML(o) +
+    "<div class='total-bar'><span>Total</span><b>" + euro(o.total) + "</b></div>" +
+    (o.note ? "<p class='muted'>Remarque : " + esc(o.note) + "</p>" : "") +
+    "<div class='btn-row'>" +
+    "<button class='btn ghost' id='mPrint'>🖨️ Imprimer</button>" +
+    "<button class='btn' id='mClose'>Fermer</button></div>";
+  m.style.display = "flex";
+  $("mClose").addEventListener("click", function(){ m.style.display = "none"; });
+  $("mPrint").addEventListener("click", function(){ doPrint(recapHTML(o)); });
+}
+$("orderModal").addEventListener("click", function(ev){
+  if (ev.target === $("orderModal")) $("orderModal").style.display = "none";
+});
+
+/* Récapitulatif général */
+$("btnPrintGeneral").addEventListener("click", function(){
+  var list = sortedOrders();
+  if (!list.length){ toast("Aucune commande à imprimer."); return; }
+  var totalAll = 0;
+  var h = "<h1>" + esc(settings.titre) + "</h1><h2>Récapitulatif général des commandes</h2>" +
+    "<p>Édité le " + esc(new Date().toLocaleString("fr-FR", { day: "numeric", month: "long", year: "numeric", hour: "2-digit", minute: "2-digit" })) + " — " + list.length + " commande(s)</p>" +
+    "<table><thead><tr><th>N°</th><th>Date</th><th>Client</th><th>Téléphone</th><th class='r'>Total</th></tr></thead><tbody>";
+  list.forEach(function(o){
+    totalAll += o.total;
+    h += "<tr><td>" + esc(o.num) + "</td><td>" + esc(dateFR(o.date)) + "</td><td>" +
+      esc(o.prenom + " " + o.nom) + "</td><td>" + esc(o.tel) + "</td><td class='r'>" + euro(o.total) + "</td></tr>";
+  });
+  h += "</tbody></table><p style='text-align:right'><b>TOTAL GÉNÉRAL : " + euro(Math.round(totalAll * 100) / 100) + "</b></p>";
+  doPrint(h);
+});
+
+/* Export Excel (CSV lisible par Excel) */
+function csvCell(v){
+  v = String(v);
+  return /[;"\r\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v;
+}
+$("btnExportCsv").addEventListener("click", function(){
+  var list = sortedOrders();
+  if (!list.length){ toast("Aucune commande à exporter."); return; }
+  var rows = [["N° commande","Date","Nom","Prénom","Téléphone","Catégorie","Produit","Prix unitaire (€)","Unité","Quantité","Total ligne (€)","Total commande (€)"]];
+  list.forEach(function(o){
+    o.lignes.forEach(function(l, i){
+      rows.push([
+        o.num, dateFR(o.date), o.nom, o.prenom, o.tel,
+        l.cat || "", l.nom, l.pu.toFixed(2).replace(".", ","), l.unite,
+        numToFr(l.qte), l.total.toFixed(2).replace(".", ","),
+        i === 0 ? o.total.toFixed(2).replace(".", ",") : ""
+      ]);
+    });
+  });
+  var csv = "\uFEFF" + rows.map(function(r){ return r.map(csvCell).join(";"); }).join("\r\n");
+  var d = new Date();
+  download("commandes_" + d.toISOString().slice(0, 10) + ".csv", csv, "text/csv;charset=utf-8");
+  toast("Export Excel généré (" + list.length + " commande(s)).");
+});
+
+/* Import de commandes */
+$("btnImport").addEventListener("click", function(){ $("importInput").click(); });
+$("importInput").addEventListener("change", function(){
+  var files = Array.prototype.slice.call(this.files || []);
+  this.value = "";
+  if (!files.length) return;
+  var pending = files.length, added = 0, dups = 0, errs = 0;
+  function finish(){
+    if (added) { lsSet(K_O, orders); normalizeCounter(); renderOrders(); }
+    var msg = added + " commande(s) importée(s)";
+    if (dups) msg += ", " + dups + " déjà présente(s) (ignorée(s))";
+    if (errs) msg += ", " + errs + " fichier(s) illisible(s)";
+    toast(msg + ".");
+  }
+  files.forEach(function(f){
+    var fr = new FileReader();
+    fr.onload = function(){
+      try {
+        var data = JSON.parse(fr.result);
+        var candidates = [];
+        if (Array.isArray(data)) candidates = data;
+        else if (data && Array.isArray(data.orders)) candidates = data.orders;
+        else if (data && data.order) candidates = [data.order];
+        else if (data && data.num && Array.isArray(data.lignes)) candidates = [data];
+        candidates.forEach(function(o){
+          if (!o || !o.num || !Array.isArray(o.lignes)) { errs++; return; }
+          var exists = orders.some(function(x){ return x.num === o.num; });
+          if (exists) { dups++; return; }
+          orders.push(o); added++;
+        });
+      } catch(e){ errs++; }
+      if (--pending === 0) finish();
+    };
+    fr.onerror = function(){ errs++; if (--pending === 0) finish(); };
+    fr.readAsText(f);
+  });
+});
+
+/* ---------- Tarifs ---------- */
+var editingTarifId = null;
+function renderTarifs(){
+  var body = $("tarifsBody");
+  var cats = [];
+  tarifs.forEach(function(t){
+    var c = (t && t.cat) || "Divers";
+    if (cats.indexOf(c) === -1) cats.push(c);
+  });
+  cats.sort(function(a, b){ return a.localeCompare(b, "fr"); });
+  var dl = $("catList");
+  if (dl) dl.innerHTML = cats.map(function(c){ return "<option value='" + esc(c) + "'>"; }).join("");
+  if (!tarifs.length){
+    body.innerHTML = "<tr><td colspan='6' class='muted'>Aucun produit. Ajoutez-en ci-dessus.</td></tr>";
+    return;
+  }
+  body.innerHTML = tarifs.slice().sort(function(a, b){
+    var ca = a.cat || "Divers", cb = b.cat || "Divers";
+    if (ca !== cb) return ca.localeCompare(cb, "fr");
+    return a.nom.localeCompare(b.nom, "fr");
+  }).map(function(t){
+    return "<tr>" +
+      "<td>" + esc(t.nom) + "</td>" +
+      "<td class='muted'>" + esc(t.cat || "Divers") + "</td>" +
+      "<td class='r'>" + numToFr(t.pu.toFixed(2)) + " € HT</td>" +
+      "<td>" + (t.unite === "kg" ? "au kg" : "à la pièce") + "</td>" +
+      "<td>" + ((t.unite === "kg" && t.poids > 0) ? numToFr(t.poids) + " kg" : "—") + "</td>" +
+      "<td><button class='btn small ghost' data-act='edit' data-id='" + t.id + "'>✏️</button> " +
+      "<button class='btn danger' data-act='del' data-id='" + t.id + "'>🗑</button></td>" +
+      "</tr>";
+  }).join("");
+}
+$("tarifsBody").addEventListener("click", function(ev){
+  var b = ev.target.closest("button[data-act]");
+  if (!b) return;
+  var id = b.getAttribute("data-id");
+  var t = null;
+  for (var i = 0; i < tarifs.length; i++) if (String(tarifs[i].id) === String(id)) { t = tarifs[i]; break; }
+  if (!t) return;
+  if (b.getAttribute("data-act") === "del"){
+    if (!confirm("Supprimer le produit « " + t.nom + " » du tarif ?")) return;
+    tarifs = tarifs.filter(function(x){ return x.id !== t.id; });
+    lsSet(K_T, tarifs);
+    renderTarifs(); renderCatalogue(); updateTotal();
+    toast("Produit supprimé.");
+  } else {
+    editingTarifId = t.id;
+    $("tNom").value = t.nom;
+    $("tCat").value = t.cat || "";
+    $("tPrix").value = String(t.pu).replace(".", ",");
+    $("tUnite").value = t.unite;
+    $("tPoids").value = (t.poids > 0) ? String(t.poids).replace(".", ",") : "";
+    togglePoids();
+    $("btnTarifSave").textContent = "💾 Modifier le produit";
+    $("btnTarifCancel").style.display = "inline-block";
+  }
+});
+$("btnTarifCancel").addEventListener("click", function(){
+  editingTarifId = null;
+  $("tNom").value = ""; $("tCat").value = ""; $("tPrix").value = ""; $("tUnite").value = "pièce"; $("tPoids").value = "";
+  togglePoids();
+  $("btnTarifSave").textContent = "➕ Ajouter le produit";
+  $("btnTarifCancel").style.display = "none";
+});
+function togglePoids(){
+  $("fTPoids").style.display = ($("tUnite").value === "kg") ? "block" : "none";
+}
+$("tUnite").addEventListener("change", togglePoids);
+togglePoids();
+$("btnTarifSave").addEventListener("click", function(){
+  var nom = $("tNom").value.trim();
+  var cat = $("tCat").value.trim() || "Divers";
+  var pu = parseFloat($("tPrix").value.replace(",", "."));
+  var unite = $("tUnite").value;
+  var poidsRaw = parseFloat(String($("tPoids").value).replace(",", "."));
+  var poids = (unite === "kg" && !isNaN(poidsRaw) && poidsRaw > 0) ? poidsRaw : null;
+  if (!nom || isNaN(pu) || pu <= 0){ toast("Indiquez un nom de produit et un prix valide."); return; }
+  if (unite === "kg" && !poids){ toast("Pour un produit au kg, indiquez le poids moyen d'une pièce (sinon le client devra saisir un poids en kg)."); }
+  if (editingTarifId !== null){
+    for (var i = 0; i < tarifs.length; i++){
+      if (String(tarifs[i].id) === String(editingTarifId)) {
+        tarifs[i].nom = nom; tarifs[i].cat = cat; tarifs[i].pu = pu; tarifs[i].unite = unite; tarifs[i].poids = poids;
+      }
+    }
+    toast("Produit modifié.");
+  } else {
+    tarifIdMax += 1;
+    tarifs.push({ id: tarifIdMax, nom: nom, cat: cat, pu: pu, unite: unite, poids: poids });
+    toast("Produit ajouté.");
+  }
+  lsSet(K_T, tarifs);
+  $("btnTarifCancel").click();
+  renderTarifs(); renderCatalogue(); updateTotal();
+});
+
+/* ---------- Outils ---------- */
+$("setTitle").value = settings.titre;
+$("setEmail").value = settings.email;
+$("setAuto").checked = !!settings.autoEmail;
+$("btnSetSave").addEventListener("click", function(){
+  settings.titre = $("setTitle").value.trim() || "BAYLE";
+  settings.email = $("setEmail").value.trim();
+  settings.autoEmail = $("setAuto").checked;
+  lsSet(K_S, settings);
+  $("appTitle").textContent = settings.titre;
+  document.title = "Commandes — " + settings.titre;
+  toast("Paramètres enregistrés.");
+});
+
+var lastQrUrl = "";
+$("btnQrGen").addEventListener("click", function(){
+  var url = $("qrUrl").value.trim();
+  if (!url){ toast("Collez d'abord l'adresse web du formulaire."); return; }
+  if (typeof QRCode === "undefined"){ toast("Générateur QR indisponible dans ce contexte."); return; }
+  $("qrBox").innerHTML = "";
+  try {
+    new QRCode($("qrBox"), { text: url, width: 260, height: 260, colorDark: "#000000", colorLight: "#ffffff", correctLevel: QRCode.CorrectLevel.M });
+    lastQrUrl = url;
+    $("btnQrPrint").style.display = "inline-block";
+    toast("QR code généré ✔");
+  } catch(e){ toast("Impossible de générer le QR code (adresse trop longue ?)."); }
+});
+$("btnQrPrint").addEventListener("click", function(){
+  if (!lastQrUrl){ toast("Générez d'abord un QR code."); return; }
+  var inner = $("qrBox").innerHTML;
+  var h = "<div class='qr-sheet'><h1>" + esc(settings.titre) + "</h1>" +
+    "<h2>Scannez pour passer commande</h2>" + inner +
+    "<p>" + esc(lastQrUrl) + "</p></div>";
+  doPrint(h);
+});
+
+/* Sauvegarde / restauration */
+$("btnBackup").addEventListener("click", function(){
+  var backup = { type: "sauvegarde", version: 1, date: new Date().toISOString(), tarifs: tarifs, orders: orders, counter: counter, settings: settings };
+  var d = new Date();
+  download("sauvegarde_commandes_" + d.toISOString().slice(0, 10) + ".json", JSON.stringify(backup, null, 2), "application/json");
+  toast("Sauvegarde téléchargée.");
+});
+$("btnRestore").addEventListener("click", function(){ $("restoreInput").click(); });
+$("restoreInput").addEventListener("change", function(){
+  var f = this.files && this.files[0];
+  this.value = "";
+  if (!f) return;
+  var fr = new FileReader();
+  fr.onload = function(){
+    try {
+      var data = JSON.parse(fr.result);
+      if (!data || data.type !== "sauvegarde") { toast("Fichier de sauvegarde invalide."); return; }
+      if (Array.isArray(data.tarifs) && confirm("Remplacer également les tarifs et paramètres par ceux de la sauvegarde ? (OK = oui)")) {
+        tarifs = data.tarifs; migrateTarifs(); lsSet(K_T, tarifs);
+        if (data.settings) { settings = data.settings; lsSet(K_S, settings); $("appTitle").textContent = settings.titre; $("setTitle").value = settings.titre || ""; $("setEmail").value = settings.email || ""; }
+        tarifIdMax = tarifs.reduce(function(m, t){ return Math.max(m, t.id || 0); }, 0);
+        renderTarifs(); renderCatalogue();
+      }
+      var added = 0;
+      (data.orders || []).forEach(function(o){
+        if (!o || !o.num || !Array.isArray(o.lignes)) return;
+        if (orders.some(function(x){ return x.num === o.num; })) return;
+        orders.push(o); added++;
+      });
+      if (data.counter) counter = Math.max(counter, data.counter);
+      lsSet(K_O, orders); lsSet(K_C, counter); normalizeCounter();
+      renderOrders();
+      toast("Restauration terminée : " + added + " nouvelle(s) commande(s).");
+    } catch(e){ toast("Impossible de lire ce fichier."); }
+  };
+  fr.readAsText(f);
+});
+
+/* ---------- Init ---------- */
+if (!storageOK) $("banner").style.display = "block";
+normalizeCounter();
+renderCatalogue();
+renderOrders();
+renderTarifs();
+updateTotal();
+syncHash();
+})();
+</script>
+
+<script type="module" src="./Com Domaine de Limagne (avant le 0312)_files/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" nonce="L6D72DSs2Wi57vBGx3jtTw==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;36b4216ae2dc4d5488c249161e71fe1e&quot;,&quot;spa&quot;:2}" crossorigin="anonymous"></script>
+</body></html>
